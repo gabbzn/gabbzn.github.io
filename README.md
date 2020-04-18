@@ -1,2 +1,2 @@
 # http://gabbzn.github.io
-tabela do diego
+historia do design
