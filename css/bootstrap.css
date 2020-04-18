@@ -2953,6 +2953,21 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 
+.btn-link-cultura {
+  font-weight: 500;
+  color: #ffa500;
+  text-decoration: none;
+  font-size: x-small;
+  float: right;
+  border-color: #ffa500;
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.btn:hover {opacity: 1}
+
 .btn-link:hover {
   color: #0056b3;
   text-decoration: underline;
@@ -4938,6 +4953,8 @@ input[type="button"].btn-block {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
   .badge {
     transition: none;
@@ -4953,7 +4970,7 @@ a.badge:hover, a.badge:focus {
 }
 
 .btn .badge {
-  position: relative;
+  position: left;
   top: -1px;
 }
 
@@ -5822,7 +5839,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #feebf3;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5840,7 +5857,7 @@ a.close.disabled {
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
+  opacity: 2;
 }
 
 .modal-backdrop.show {
@@ -5855,7 +5872,7 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #3b3759;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
@@ -5885,7 +5902,7 @@ a.close.disabled {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #3b3759;
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
