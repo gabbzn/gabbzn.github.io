@@ -1,0 +1,797 @@
+<html lang="en" class="sb-init"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#333">
+  <title>Centro Diagnostico Valdichiana</title>
+  <meta name="description" content="Centro Diagnostico Valdichiana">
+  <link rel="shortcut icon" href="img/favicon.png?v=3">
+ 
+  <link rel="stylesheet" href="assets/css/preload.min.css">
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
+  
+
+  <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+
+    <link rel="stylesheet" href="news.css">
+
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="" cz-shortcut-listen="true" style="overflow: visible; outline: none;" data-scroll-id="smooth-scroll-top" id="smooth-scroll-top" tabindex="-1">
+
+
+
+  <div id="ms-preload" class="ms-preload">
+    <div id="status">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sb-site-container">
+    
+    <!-- Modal  Login-->
+  <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+          <div class="modal-header shadow-2dp no-pb">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+
+            <div class="modal-title text-center">
+              <img src="img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 ms-logo">
+              <h3 class="no-m ms-site-title">Centro Diagnostico
+                <span>Valdichiana</span>
+              </h3>
+            </div>
+
+            <div class="modal-header-tabs">
+             <!--  títulos login -->
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
+                <li role="presentation" class=" active">
+                  <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="withoutripple" aria-expanded="true">
+                    <i class="fas fa-user"></i> Login</a>
+                </li>
+
+               <li role="presentation" class="">
+                    <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="withoutripple" aria-expanded="false">
+                      <i class="fas fa-user-plus"></i> Registrati</a>
+                  </li>
+              
+                  <li role="presentation" class="">
+                    <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="withoutripple" aria-expanded="false">
+                      <i class="fas fa-key"></i> 
+                      Recupera la pass</a>
+                  </li>
+
+              <span id="i1" class="ms-tabs-indicator" style="left: 399.975px; width: 199.988px;"></span></ul>
+
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+
+              <!-- login - registro - recuperar senha -->
+
+              <div role="tabpanel" class="tab-pane fade active in" id="ms-login-tab">
+                <form autocomplete="off">
+                  <fieldset>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-user"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-user">Inserisci il tuo nome utente</label>
+                        <input type="text" id="ms-form-user" class="form-control"> </div>
+                    </div>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-pass">Inserisci la password</label>
+                        <input type="password" id="ms-form-pass" class="form-control"> </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-md-6">
+                        <div class="form-group no-mt">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Ricordare la password </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <button class="btn btn-raised btn-primary pull-right">Accedi</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                <form>
+                  <fieldset>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-user-plus"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-user">Nome utente</label>
+                        <input type="text" id="ms-form-user" class="form-control"> </div>
+                    </div>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-email">Inserisci l'email</label>
+                        <input type="email" id="ms-form-email" class="form-control"> </div>
+                    </div>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-pass">Inserisci la password</label>
+                        <input type="password" id="ms-form-pass" class="form-control"> </div>
+                    </div>
+                    <div class="form-group label-floating">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="ms-form-pass">Ripetere la password</label>
+                        <input type="password" id="ms-form-pass" class="form-control"> </div>
+                    </div>
+                    <button class="btn btn-raised btn-block btn-primary">Registrati</button>
+                  </fieldset>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+                <fieldset>
+                  <div class="form-group label-floating">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <label class="control-label" for="ms-form-user">Nome utente</label>
+                      <input type="text" id="ms-form-user" class="form-control"> </div>
+                  </div>
+                  <div class="form-group label-floating">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <label class="control-label" for="ms-form-email">Email</label>
+                      <input type="email" id="ms-form-email" class="form-control"> </div>
+                  </div>
+                  <button class="btn btn-raised btn-block btn-primary">Invia password
+                  </button>
+                </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="ms-header ms-header-primary">
+      <div class="container container-full">
+        <div class="ms-title">
+          <a href="index.html">
+          <img src="img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 ms-logo">
+            <h1 class="animated fadeInRight animation-delay-6">Centro Diagnostico
+              <span>Valdichiana</span>
+            </h1>
+          </a>
+        </div>
+
+        <div class="header-right">
+          
+          <a href="javascript:void(0)" class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8" data-toggle="modal" data-target="#ms-account-modal">
+            <i class="fas fa-user"></i>
+          </a>
+          <form class="search-form animated zoomInDown animation-delay-9">
+            <input id="search-box" type="text" class="search-input" placeholder="Search..." name="q" />
+            <label for="search-box">
+              <i class="fas fa-search"></i>
+            </label>
+          </form>
+       
+        </div>
+
+      </div>
+    </header>
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+      <div class="container container-full">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-icon"><img src="img/navbar-brand.png" alt=""> </span>
+            <span class="ms-title">Centro Diagnostico
+              <strong>Valdichiana</strong>
+            </span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=" active">
+              <a href="index.html" class="animated fadeIn animation-delay-4"  data-name="home">Home
+              </a>
+            </li>
+          
+            <li class="dropdown yamm-fw">
+              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-6" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="component">Prestazioni
+             
+              </a>
+              <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
+                <li>
+                  <div class="row">
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-diagnoses"></i> Esami Diagnostici</h3>
+                        <ul class="megamenu-block-list">
+                          
+                            <li><a href="radiografia.html" class="underline-from-center">Radiografia</a></li>
+                            <li><a href="risonanza.html" class="underline-from-center">RISONANZA MAGNETICA</a></li>
+                            <li><a href="cone.htlm" class="underline-from-center">CONE BEAM</a></li>
+                            <li><a href="moc.html" class="underline-from-center">Moc</a></li>
+                            <li><a href="ecografia.html" class="underline-from-center">ECOGRAFIA</a></li>
+                            <li><a href="tac.html" class="underline-from-center">TAC</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-user-md"></i>SPECIALISTICHE</h3>
+                        <ul class="megamenu-block-list">
+                         
+                            <li><a href="anestesiologia.html" class="underline-from-center">ANESTESIOLOGIA</a></li>
+                            <li><a href="broncopneumologia.html" class="underline-from-center">BRONCOPNEUMOLOGIA</a></li>
+                            <li><a href="cardiologia.htlm" class="underline-from-center">cardiologia</a></li>
+                            <li><a href="chirurgiagenerale.html" class="underline-from-center">chirurgia generale</a></li>
+                           
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title"></h3>
+                         
+                        <ul class="megamenu-block-list">
+                          <li><a href="chirurgiavascolare.html" class="underline-from-center">chirurgia vascolare</a></li>
+                          <li><a href="dermatologia.html" class="underline-from-center">dermatologia</a></li>
+                          <li><a href="endocrinologia.html" class="underline-from-center">endocrinologia</a></li>
+                          <li><a href="fisiatria.html" class="underline-from-center">fisiatria</a></li>
+                          <li><a href="gastroenterologia.html" class="underline-from-center">gastroenterologia</a></li>
+                          <li><a href="ginecologia.html" class="underline-from-center">ginecologia</a></li>
+                          
+                            <li><a href="medicina-legale.html" class="underline-from-center">medicina legale</a></li>
+                            <li><a href="medicina-chirurgia-estetica.html" class="underline-from-center">medicina e chirurgia estetica</a></li>
+                            <li><a href="medicina-del-lavoro.htlm" class="underline-from-center">medicina del lavoro</a></li>
+                            <li><a href="medicina-dello-sport.html" class="underline-from-center">medicina dello sport</a></li>
+                            <li><a href="nefrologia.html" class="underline-from-center">nefrologia</a></li>
+                            <li><a href="neurologia.html" class="underline-from-center">neurologia</a></li>
+                            <li><a href="neurochirugia.html" class="underline-from-center">neurochirugia</a></li>
+                            <li><a href="nutrizione.html" class="underline-from-center">nutrizione</a></li>
+                            <li><a href="oculistica.html" class="underline-from-center">oculistica</a></li>
+                            <li><a href="ortopedia-traumatologia.html" class="underline-from-center">ortopedia e traumatologia</a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <h3 class="megamenu-block-title">
+                        <ul class="megamenu-block-list">
+                        
+                            <li><a href="otorino-laringoiatria.html" class="underline-from-center">otorino laringoiatria</a></li>
+                            <li><a href="ozonoterapia.html" class="underline-from-center">ozonoterapia</a></li>
+                            <li><a href="pediatria.htlm" class="underline-from-center">pediatria</a></li>
+                            <li><a href="psichiatria.html" class="underline-from-center">psichiatria</a></li>
+                            <li><a href="psicologia.html" class="underline-from-center">psicologia</a></li>
+                            <li><a href="reumatologia.html" class="underline-from-center">reumatologia</a></li>
+                            <li>  <a class="withripple" href="component-icons-basic.html">
+                              <i class="far fa-angle-right"></i> urologia</a></li>
+                       
+                        </ul>
+                      </div>
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-user-nurse"></i>   Ambulatorio  Infermieristico</h3>
+                        <ul class="megamenu-block-list">
+                    
+                            <li>medicazioni semplici</li>
+                            <li>medicazioni complesse</li>
+                            <li>rilevazione parametri vitali</li>
+                            <li><span data-tooltip="(via sottocutanea, intradermica, intramuscolo, enterale)" data-tooltip-position="right">somministrazione farmaci*</span></li>
+                            <li>prelievo venoso</li>
+                            
+                        
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fad fa-hospital-user"></i> Punto Prelievi</h3>
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a class="withripple" href="component-icons-basic.html">
+                              <i class="far fa-angle-right"></i> prelievi di sangue con o senza prenotazione dalle 7:00 alle 9:30</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Professionisti
+           
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="blog-sidebar.html">
+                    <i class="zmdi zmdi-view-compact"></i> categoria</a>
+                </li>
+                <li>
+                  <a href="blog-sidebar2.html">
+                    <i class="zmdi zmdi-view-compact"></i> categoria</a>
+                </li>
+                <li>
+                  <a href="blog-masonry.html">
+                    <i class="zmdi zmdi-view-dashboard"></i> categoria 1</a>
+                </li>
+                <li>
+                  <a href="blog-masonry2.html">
+                    <i class="zmdi zmdi-view-dashboard"></i> categoria</a>
+                </li>
+                <li>
+                  <a href="blog-full.html">
+                    <i class="zmdi zmdi zmdi-view-stream"></i> categoria</a>
+                </li>
+                <li>
+                  <a href="blog-full2.html">
+                    <i class="zmdi zmdi zmdi-view-stream"></i> categoria</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="blog-post.html">
+                    <i class="zmdi zmdi-file-text"></i> categoria</a>
+                </li>
+                <li>
+                  <a href="blog-post2.html">
+                    <i class="zmdi zmdi-file-text"></i> categoria</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Dove Siamo
+                
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Contatti
+               
+              </a>
+              
+            </li>
+            <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
+          </ul>
+        </div>
+        <!-- navbar-collapse collapse -->
+    <!--     <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
+          <i class="fas fa-bars"></i>
+        </a> -->
+      </div>
+      <!-- container -->
+    </nav>
+
+    <!-- Header -->
+   
+
+   <!--  Introdução -->
+    <div class="introducao ms-hero-material">
+      
+      <div class="container">
+        <div class="col-lg-6 col-md-7">
+          <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="carousel-caption">
+                  <div class="ms-hero-material-text-container">
+                   
+                    <header class=" animated slideInLeft animation-delay-5">
+                      <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Centro Diagnostico
+                        <strong>Valdichiana</strong> </h1>
+                      <h2 class="animated fadeInLeft animation-delay-18">massima riservatezza, competenza e prestazioni di alta qualità in tempi rapidi</h2>
+                    </header>
+
+                     <!-- buttons introducao -->
+                     <div class="introducao-buttons ">
+                      <div class="introducao-buttons ">
+                        <a href="javascript:void(0);" class="btn btn-cdv btn-raised animated fadeInLeft animation-delay-24 mr-2">
+                           Prenota Online</a>
+                        <a href="javascript:void(0);" class="btn btn-cdv btn-raised animated fadeInRight animation-delay-24">
+                         Ritiro Analisi<div class="ripple-container"></div></a>
+                      </div>
+                    </div>
+                 
+                  </div>
+                  <!-- ms-hero-material-text-container -->
+                </div>
+              </div>
+         
+            </div>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+ <!-- NEWS ms-hero ms-hero-black -->
+      <div class="container news">
+        <h2 class="wow fadeInDown animation-delay-4">News <strong>Valdichiana</strong></h2>
+        <p class="lead aco wow fadeInDown animation-delay-5 center-block"> Rimani aggiornato sugli 
+          <span class="color-cdv">aggiornamenti </span> dei nostri servizi.</p>
+        <div class="cdv-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+          <div class="card-block">
+            <span class="cdv-icon cdv-icon-xxlg mr-2">
+              <img src="svg/ascolto.png" alt="">
+            </span>
+            <h4>Liberamente Ascolto</h4>
+            <p>Servizio gratuito di ascolto e supporto psicologico telefonico.</p>
+            <a href="javascript:void(0)" class="btn btn-cdv btn-raised">Scopri di più</a>
+          </div>
+        </div>
+        <div class="cdv-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+          <div class="card-block">
+            <span class="cdv-icon cdv-icon-xxlg">
+              <img src="svg/covid.png" alt="">
+            </span>
+            <h4>Liberamente Ascolto</h4>
+            <p>Servizio gratuito di ascolto e supporto psicologico telefonico.</p>
+            <a href="javascript:void(0)" class="btn btn-cdv btn-raised">Scopri di più</a>
+          </div>
+        </div>
+        <div class="cdv-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+          <div class="card-block">
+            <span class="cdv-icon cdv-icon-xxlg">
+              <img src="svg/ascolto.png" alt="">
+            </span>
+            <h4>Liberamente Ascolto</h4>
+            <p>Servizio gratuito di ascolto e supporto psicologico telefonico.</p>
+            <a href="javascript:void(0)" class="btn btn-cdv btn-raised">Scopri di più</a>
+          </div>
+        </div>
+        <div class="cdv-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+          <div class="card-block">
+            <span class="cdv-icon cdv-icon-xxlg">
+              <img src="svg/ascolto.png" alt="">
+            </span>
+            <h4>Liberamente Ascolto</h4>
+            <p>Servizio gratuito di ascolto e supporto psicologico telefonico.</p>
+            <a href="javascript:void(0)" class="btn btn-cdv btn-raised">Scopri di più</a>
+          </div>
+        </div>
+      </div>
+
+    <!--   Fecha NEWS -->
+
+    <!-- Prestazioni Section -->
+
+    <div class="prestazioni wrap wrap-prestazioni">
+      <div class="container">
+        <h2 class="wow fadeInDown animation-delay-5" >Prestazioni
+          </h2>
+        <div class="row">
+         
+          <div class="col-md-6 col-md-push-6">
+            <div class="wow fadeInRight animation-delay-6 card" >
+              
+              <img src="img/banner/clinica-1.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12" style="visibility: visible; animation-name: zoomIn;">
+              
+              <h4>Punto Prelievi</h4>
+              <p>È possile eseguire prelievi di sangue con o senza prenotazione dalle 7:00 alle 9:30 dal lunedi al sabato con risposte cartacee o via mail</p>
+
+              <a href="azienda.html" class="btn btn-laranja btn-raised wow flipInX animation-delay-14 aligncenter" style="visibility: visible; animation-name: flipInX;">
+                Scopri di Più </a>
+
+            </div>
+            
+          </div>
+
+          <div class="col-md-6 col-md-pull-6 center-block">
+            <div class="wow fadeInLeft animation-delay-6 card" style="visibility: visible; animation-name: fadeInLeft;">
+              
+              <img src="img/banner/clinica-1.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12" style="visibility: visible; animation-name: zoomIn;">
+              
+              <h4>Esami Diagnostici</h4>
+              <p>Il CDV dispone delle più evolute tecnologie di rilevazione. RM, TAC, Cone beam, Mineralometria ossea computerizzata, Ecografia…</p>
+
+              <a href="azienda.html" class="btn btn-laranja btn-raised wow flipInX animation-delay-14 aligncenter" style="visibility: visible; animation-name: flipInX;">
+                Scopri di Più </a>
+
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="row">
+         
+          <div class="col-md-6 col-md-push-6">
+            <div class="wow fadeInRight animation-delay-6 card" style="visibility: visible; animation-name: fadeInRight;">
+              
+              <img src="img/banner/clinica-1.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12" style="visibility: visible; animation-name: zoomIn;">
+              
+              <div class="text-center">
+                <h4>Specialistiche</h4>
+              <p>I nostri specialisti sono a disposizione dei nostri pazienti nelle discipline di cui la moderna medicina dispone…</p>
+
+              <a href="azienda.html" class="btn btn-laranja btn-raised wow flipInX animation-delay-14 aligncenter" style="visibility: visible; animation-name: flipInX;">
+                Scopri di Più </a>
+              </div>
+
+            </div>
+            
+          </div>
+
+          <div class="col-md-6 col-md-pull-6 center-block">
+            <div class="wow fadeInLeft animation-delay-6 card" style="visibility: visible; animation-name: fadeInLeft;">
+              
+              <img src="img/banner/clinica-1.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12" style="visibility: visible; animation-name: zoomIn;">
+              
+              <h4>Amb. Infermieristico</h4>
+              <p>L’ ambulatorio fornisce prestazioni per medicazioni, rilevazione dei parametri vitali, somministrazione farmaci</p>
+
+              <a href="azienda.html" class="btn btn-laranja btn-raised wow flipInX animation-delay-14 aligncenter border" style="visibility: visible; animation-name: flipInX;">
+                Scopri di Più </a>
+
+            </div>
+          </div>
+           <div class="col-md-12 center-block">
+            <div class="animated fadeInUp animation-delay-1 font-smoothing text-center">
+              <a href="azienda.html" class="btn  btn-prestazioni fadeInUp animation-delay-1 font-smoothing ">
+                Tuttel le Prestazioni </a>
+            </div>
+           </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!--  Azienda -->
+   <div class="azienda wrap wrap-azienda">
+    <div class="container">
+      <h2 class="wow fadeInDown animation-delay-5" style="visibility: visible; animation-name: fadeInDown;">Chi
+        <strong>Siamo</strong> </h2>
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 mb-4  center-block">
+          <img src="img/banner/clinica-1.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12" style="visibility: visible; animation-name: zoomIn;"> </div>
+        <div class="col-md-6 col-md-pull-6 pr-6">
+          <p class="wow fadeInLeft animation-delay-6" style="visibility: visible; animation-name: fadeInLeft;">L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di tempo, economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale in continuo cambiamento. </p>
+          <p class="wow fadeInLeft animation-delay-7" style="visibility: visible; animation-name: fadeInLeft;"> L’obiettivo di creare un coinvolgimento attivo dell’utente con il personale sanitario attraverso il dialogo e l’ascolto è volto a creare un percorso migliore da seguire perché personalizzato</p>
+      
+          <div class="text-left">
+            <a href="azienda.html" class="btn btn-laranja btn-raised wow flipInX animation-delay-14" style="visibility: visible; animation-name: flipInX;">
+              Scopri di Più </a>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Azienda -->
+
+  <!-- Link Utili -->
+  <div class="link-utili link-utili-material">
+      
+    <div class="container">
+      <div class="col-md-6 aligncenter ">
+        <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+               
+                 
+                  <header class="animated fadeInUp animation-delay-15 font-smoothing">
+                   
+                      <img src="img/logo-rodape-purple.svg" alt="Logo Centro Diagnostico Valdichiana" ">       
+                  </header>
+
+            
+                </div>
+              
+                   
+                  </div>
+               
+                </div>
+                <!-- ms-hero-material-text-container -->
+              </div>
+            </div>
+            <div class="link-feature col-md-6 wow zoomIn animation-delay-16  center-block mt-2">
+              <div class="card-block text-center">
+                <span class="link-icon link-icon-xxlg">
+                  <img src="svg/codice-etico.svg" alt="">
+                </span>
+                <h4>Come fare per</h4>
+                <p>Consigli, informazioni utili e risposte alle domande più frequenti</p>
+                <div class="text-center">
+                <a href="javascript:void(0)" class="btn btn-link btn-raised ">Scopri di più</a>
+              </div>
+            </div>
+              
+            </div>
+            <div class="link-feature  col-md-6 wow zoomIn animation-delay-16  center-block mt-6">
+              <div class="card-block text-center">
+                <span class="link-icon link-icon-xxlg">
+                  <img src="svg/codice-etico.svg" alt="">
+                </span>
+                <h4>Codice Etico</h4>
+                <p>Consulta il Codice Etico della società Centro Diagnostico Valdichiana.</p>
+                <div class="text-center">
+                <a href="javascript:void(0)" class="btn btn-link btn-raised ">Scopri di più</a>
+              </div>
+            </div>
+              
+            </div>
+       
+       
+                  </div>
+          </div>
+
+          <!--Quebra-->
+          <div class="quebra n-m">
+      
+            <div class="container">
+              <div class="col-md-12 aligncenter center-block ">
+<h2 class="animated fadeInRightTiny animation-delay-10">i nostri punti di forza sono </h2> <h3 class="animated fadeInLeftTiny animation-delay-10">i desideri dei nostri utenti</h3>
+              </div>
+            </div>
+          </div>
+
+          <aside class="footbar n-m pt-1 pb-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 footer-col .animation-delay-15 ">
+                  <div class="footbar-block border-right ">
+                    <h3>Centro Diagnostico Valdichiana <span class="mini">srl</span></h3>
+                 
+                    <ul class="list-unstyled ms-icon-list link_col">
+                      <li>
+                        <a href="dovesiamo.html">
+                          <i class="fas fa-map-pin"></i>  Via delle Farniole, 24 52045
+                          
+                          </a>
+                      </li>
+                      <li>
+                        <a href="dovesiamo.html">
+                          <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+                          </a>
+                      </li>
+                      <li>
+                       <a href=""> <i class="fas fa-user-tie"></i>Direttore Sanitario: D’Ascola Prof. Pier Giorgio
+                       </a>
+                      </li>
+                    </ul>
+                   
+                  </div>
+          
+                </div>
+                <div class="col-md-5 col-sm-7 footer-col">
+                  <div class="footbar-block border-right">
+                    <h3>Contatti</h3>
+                    <div class="footer-media">
+                      <div class="media">
+                        <div class="media-left media-middle">
+                          <ul class="list-unstyled link_col">
+                    
+                            <li>
+                              <a href="dovesiamo.html">
+                                <i class="fas fa-phone-office"></i> +39 0575 641106
+                                </a>
+                            </li>
+      
+                            <li>
+                             <a href=""> <i class="fas fa-fax"></i> +39 0575 649719
+                             </a>
+                            </li>
+                          </ul>
+                  
+               
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-5 footer-col footer-text-left">
+              
+                  <div class="footbar-block">
+                    <h3>Social</h3>
+                    <div class="footbar-social">
+                      <a href="javascript:void(0)" class="btn-circle btn-facebook">
+                        <i class="fab fa-facebook-f"></i>                      
+                      </a>
+                  
+                      <a href="javascript:void(0)" class="btn-circle btn-instagram">
+                       <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="javascript:void(0)" class="btn-circle btn-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <footer class="footer">
+            <div class="container">
+              <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+            </div>
+          </footer>
+
+          <div class="btn-back-top back-show">
+            <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- container -->
+  </div>
+      <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="assets/js/plugins.min.js"></script>
+      <script src="assets/js/app.min.js"></script>
+      <script src="assets/js/configurator.min.js"></script>
+      <script>
+        (function(i, s, o, g, r, a, m)
+        {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function()
+          {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-90917746-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <script src="assets/js/index.js"></script>
+    
+  </body></html>
