@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" class="sb-init sb-active sb-active-left">
 
 <head>
@@ -7,34 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#333">
-  <title>Centro Diagnostico Valdichiana</title>
-  <link rel="shortcut icon" href="../centro-diagnostico-valdichiana/favicon-purple.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="theme-color" content="#fefefe">
+  <title>Azienda ∙ CDV </title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=zncn+Icons">
+
+
   <link rel="stylesheet" href="assets/css/preload.min.css">
   <link rel="stylesheet" href="assets/css/plugins.min.css">
-  <link rel="stylesheet" href="assets/css/blue-orig.css">
 
-  <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
+  <link rel="stylesheet" href="assets/css/style-base.css">
 
-  <link rel="stylesheet" href="semedit.css">
-
-
-  <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+  <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="z-boxed" disabled="">
 
   <!--   Lora Serif & Montserrat Sans Serif -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="css/news.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-  <link rel="stylesheet" href="css/azienda.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="assets/css/news.css">
+  <link rel="stylesheet" href="assets/css/azienda.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+
   <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -43,7 +39,7 @@
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
 
-  <div id="ms-preload" class="ms-preload" style="display: none;">
+  <div id="z-preload" class="z-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
@@ -54,621 +50,1216 @@
 
   <div class="sb-site-container">
 
-    <!-- Modal  Login-->
+    <!-- Modal -->
+    <div class="modal modal-cdv in" id="z-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+          <div class="modal-header shadow-2dp no-pb">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
 
+            <div class="modal-title text-center">
+              <img src="assets/img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 z-logo" />
+              <h3 class="no-m z-site-title">
+                Centro Diagnostico
+                <strong>Valdichiana</strong>
+              </h3>
+            </div>
 
-    <!-- Header -->
- 
-    <header class="ms-header cdv-header">
-      <div class="container container-full">
-        <a href="index.html" class="btn">back to home</a>
-        <h1>provvisorio</h1>
-     
-  
-      </div>
-    </header>
-    <!-- Nav-->
+            <div class="modal-header-tabs">
+              <!--  títulos login -->
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
+                    aria-expanded="true">
+                    <i class="fas fa-user"></i> Login</a>
+                </li>
 
-   
-    <!--  Introdução -->
-    <div class="intro-intern-override intro-intern-img-citta hero-bg-cdv pt-4">
-      <div class="container">
-        <div class="text-center">
-          <img src="img/navbar-brand.png" alt=""
-            class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
-          <br>
-          <h1 class="no-m site-titolo center-block site-titolo-lg mt-2 animated zoomInDown animation-delay-5 index-1">Chi Siamo</span>
-          </h1>
+                <li role="presentation" class="">
+                  <a href="#z-register-tab" aria-controls="z-register-tab" role="tab" data-toggle="tab"
+                    class="withoutripple" aria-expanded="false">
+                    <i class="fas fa-user-plus"></i> Registrati</a>
+                </li>
 
-          <p class="filo filo-lg center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Alla continua ricerca dell'eccellenza
-            del servizio fornito.
-          </p>
+                <li role="presentation" class="">
+                  <a href="#z-recovery-tab" aria-controls="z-recovery-tab" role="tab" data-toggle="tab"
+                    class="withoutripple" aria-expanded="false">
+                    <i class="fas fa-key"></i>
+                    Recupera la pass</a>
+                </li>
+
+                <span id="i1"></span>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+              <!-- login - registro - recuperar senha -->
+
+              <div role="tabpanel" class="tab-pane fade active in" id="z-login-tab">
+                <form autocomplete="off">
+                  <fieldset>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-user"></i>
+                        </span>
+                        <label class="control-label" for="z-form-user">Inserisci il tuo nome utente</label>
+                        <input type="text" id="z-form-user" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="z-form-pass">Inserisci la password</label>
+                        <input type="password" id="z-form-pass" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-md-6">
+                        <div class="form-group no-mt">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" /><span class="checkbox-material"><span
+                                  class="check"></span></span>
+                              Ricordare la password
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <button class="btn btn-raised btn-cdv pull-right">
+                          Accedi
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="z-register-tab">
+                <form>
+                  <fieldset>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-user-plus"></i>
+                        </span>
+                        <label class="control-label" for="z-form-user">Nome utente</label>
+                        <input type="text" id="z-form-user" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <label class="control-label" for="z-form-email">Inserisci l'email</label>
+                        <input type="email" id="z-form-email" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="z-form-pass">Inserisci la password</label>
+                        <input type="password" id="z-form-pass" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fas fa-lock"></i>
+                        </span>
+                        <label class="control-label" for="z-form-pass">Ripetere la password</label>
+                        <input type="password" id="z-form-pass" class="form-control" />
+                      </div>
+                      <span class="material-input"></span>
+                    </div>
+                    <button class="btn btn-raised btn-block btn-cdv">
+                      Registrati
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="z-recovery-tab">
+                <fieldset>
+                  <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <label class="control-label" for="z-form-user">Nome utente</label>
+                      <input type="text" id="z-form-user" class="form-control" />
+                    </div>
+                    <span class="material-input"></span>
+                  </div>
+                  <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <label class="control-label" for="z-form-email">Email</label>
+                      <input type="email" id="z-form-email" class="form-control" />
+                    </div>
+                    <span class="material-input"></span>
+                  </div>
+                  <button class="btn btn-raised btn-block btn-cdv">
+                    Invia password
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-      <!--  Conteúdo -->
-    <div class="container">
-      <div class="card azienda wow animated fadeInUp animation-delay-7">
-        <!-- Chi Siamo-->
-        <div class=" animated slideInUp animation-delay-8 mb-6">
-          <div class="card-block">
-            <div class="row">
-              <h2 class="right-line">Chi Siamo</h2>
-              <div class="col-md-6 text-left">
-                <p class="capitular">
-                  L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di tempo,
-                  economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale in continuo
-                  cambiamento. L’obiettivo di creare un coinvolgimento attivo dell’utente con il personale sanitario
-                  attraverso il dialogo e l’ascolto è volto a creare un percorso migliore da seguire perché
-                  personalizzato.</p>
-                <p>L’obiettivo che il centro si propone di perseguire è pertanto l’attenzione verso l’utente, mediante
-                  il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una periodica
-                  riorganizzazione di processi e procedure interne.</p>
+    <header class="z-header z-header-cdv">
+      <div class="container container-full">
+        <div class="z-title">
+          <a href="index.html">
+            <img src="assets/img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 z-logo" />
+            <h1 class="animated fadeInRight animation-delay-6">
+              Centro Diagnostico
+              <span>Valdichiana</span>
+            </h1>
+          </a>
+        </div>
+        <div class="header-right">
+          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
+            data-toggle="modal" data-target="#z-account-modal">
+            <i class="fad fa-user"></i>
+            <div class="ripple-container"></div>
+          </a>
+          <form class="search-form animated zoomInDown animation-delay-9">
+            <input id="search-box" type="text" class="search-input" placeholder="Ricerca..." name="q" />
+            <label for="search-box">
+              <i class="fad fa-search"></i>
+            </label>
+          </form>
+
+          <a href="javascript:void(0)"
+            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
+            <i class="fad fa-bars"></i>
+            <div class="ripple-container"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+      <div class="container container-full">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <span class="ms-title">Centro Diagnostico
+              <strong>Valdichiana</strong>
+            </span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html" class="animated fadeIn animation-delay-4" data-name="home">Home
+              </a>
+            </li>
+
+            <li class="dropdown yamm-fw" class="active">
+              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-6" data-toggle="dropdown"
+                data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+                data-name="component">Prestazioni
+
+                <div class="ripple-container"></div>
+              </a>
+              <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
+                <li>
+                  <div class="row">
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-diagnoses"></i> Esami Diagnostici
+                        </h3>
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
+                              Radiografia</a>
+                          </li>
+                          <li>
+                            <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
+                              Magnetica
+                            </a>
+                          </li>
+                          <li>
+                            <a href="cone.htlm"><i class="fad fa-caret-right"></i> Cone Beam</a>
+                          </li>
+                          <li>
+                            <a href="moc.html"><i class="fad fa-caret-right"></i> Moc</a>
+                          </li>
+                          <li>
+                            <a href="ecografia.html"><i class="fad fa-caret-right"></i> Ecografia</a>
+                          </li>
+                          <li>
+                            <a href="tac.html"><i class="fad fa-caret-right"></i> TAC</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-user-md"></i>Specialistiche
+                        </h3>
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
+                              anestesiologia</a>
+                          </li>
+                          <li>
+                            <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
+                              broncopneumologia</a>
+                          </li>
+                          <li>
+                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
+                              cardiologia</a>
+                          </li>
+                          <li>
+                            <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
+                              generale</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInLeft animated-2x">
+                        <h3 class="megamenu-block-title mt-2"></h3>
+
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a href="chirurgiavascolare.html"><i class="fad fa-caret-right"></i> chirurgia
+                              vascolare</a>
+                          </li>
+                          <li>
+                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
+                              dermatologia</a>
+                          </li>
+                          <li>
+                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
+                              endocrinologia</a>
+                          </li>
+                          <li>
+                            <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
+                          </li>
+                          <li>
+                            <a href="gastroenterologia.html"><i class="fad fa-caret-right"></i>
+                              gastroenterologia</a>
+                          </li>
+                          <li>
+                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
+                              ginecologia</a>
+                          </li>
+
+                          <li>
+                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
+                              legale</a>
+                          </li>
+                          <li>
+                            <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
+                              chirurgia estetica</a>
+                          </li>
+                          <li>
+                            <a href="medicina-del-lavoro.htlm"><i class="fad fa-caret-right"></i> medicina del
+                              lavoro</a>
+                          </li>
+                          <li>
+                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
+                              dello sport</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
+                              nefrologia</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <h3 class="megamenu-block-title mt-2"></h3>
+
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a class="withripple" href="neurologia.html"><i class="fad fa-caret-right"></i>
+                              neurologia</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="neurochirugia.html"><i class="fad fa-caret-right"></i>
+                              neurochirugia</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="nutrizione.html"><i class="fad fa-caret-right"></i>
+                              nutrizione</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="oculistica.html"><i class="fad fa-caret-right"></i>
+                              oculistica</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="ortopedia-traumatologia.html"><i class="fad fa-caret-right"></i>
+                              ortopedia e
+                              traumatologia</a>
+                          </li>
+
+                          <li>
+                            <a class="withripple" href="nutrizione.html"><i class="fad fa-caret-right"></i>
+                              nutrizione</a>
+                          </li>
+                          <li>
+                            <a class="withripple" href="otorino.html"><i class="fad fa-caret-right"></i> otorino
+                              laringoiatria</a>
+                          </li>
+                          <li>
+                            <a href="ozonoterapia.html">
+                              <i class="fad fa-caret-right"></i>
+                              ozonoterapia</a>
+                          </li>
+                          <li>
+                            <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
+                          </li>
+                          <li>
+                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
+                              psichiatria</a>
+                          </li>
+                          <li>
+                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
+                              psicologia</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 megamenu-col">
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <ul class="megamenu-block-list mt-6">
+                          <li>
+                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
+                              reumatologia</a>
+                          </li>
+                          <li>
+                            <a href="urologia.html">
+                              <i class="fad fa-caret-right"></i> urologia</a>
+                          </li>
+                        </ul>
+
+                        <h3 class="megamenu-block-title">
+                          <i class="fas fa-user-nurse"></i> Ambulatorio
+                          Infermieristico
+                        </h3>
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a href="urologia.html">
+                              <i class="fad fa-caret-right"></i> Vai alla
+                              pagina</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="megamenu-block animated fadeInRight animated-2x">
+                        <h3 class="megamenu-block-title">
+                          <i class="fad fa-hospital-user"></i> Punto Prelievi
+                        </h3>
+                        <ul class="megamenu-block-list">
+                          <li>
+                            <a href="urologia.html">
+                              <i class="fad fa-caret-right"></i> Vai alla
+                              pagina</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="professionist.html" class="animated fadeIn animation-delay-7"
+                data-name="professionisti">Professionisti
+              </a>
+            </li>
+
+            <li>
+              <a href="contatti.html" class="animated fadeIn animation-delay-9" data-name="contatti">Contatti
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar-collapse collapse -->
+        <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
+          <i class="fad fa-bars"></i>
+          <div class="ripple-container"></div>
+        </a>
+      </div>
+      <!-- container -->
+    </nav>
+
+
+ <!--  Introdução -->
+ <div class="intro-intern-override intro-intern-img-citta hero-bg-cdv pt-4">
+  <div class="container ">
+    <div class="text-center">
+      <img src="assets/img/navbar-brand.png" alt=""
+        class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
+      <br>
+      <h1 class="no-m mt-2 animated zoomInDown animation-delay-5 index-1">Chi Siamo</span>
+      </h1>
+
+      <p class="filo filo-lg center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Alla continua ricerca dell'eccellenza
+        del servizio fornito.
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!--  Conteúdo -->
+<div class="container inter-page index-1">
+  <div class="card azienda wow animated fadeInUp animation-delay-7">
+    <!-- Chi Siamo-->
+    <div class=" animated slideInUp animation-delay-8 mb-6">
+      <div class="card-block">
+        <div class="row">
+          <h2 class="right-line">Chi Siamo</h2>
+          <div class="col-md-6 text-left">
+            <p class="capitular">
+              L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di tempo,
+              economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale in continuo
+              cambiamento. L’obiettivo di creare un coinvolgimento attivo dell’utente con il personale sanitario
+              attraverso il dialogo e l’ascolto è volto a creare un percorso migliore da seguire perché
+              personalizzato.</p>
+            <p>L’obiettivo che il centro si propone di perseguire è pertanto l’attenzione verso l’utente, mediante
+              il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una periodica
+              riorganizzazione di processi e procedure interne.</p>
+          </div>
+          <div class="col-md-6">
+            <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
+              organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni e alle
+              attese dei propri utenti in un contesto di buona gestione delle risorse umane e tecnologiche.La
+              professionalità degli operatori, la qualità delle tecniche e dei servizi, i limitati tempi di attesa,
+              l’alto livello della tecnologia ed il miglior comfort ambientale, contribuiscono al raggiungimento di
+              quegli obiettivi prefissati quali: il diritto alla salute, l’innovazione, la prevenzione,
+              l’efficienza, l’efficacia.L’erogazione del servizio si basa sul principio di eguaglianza dei diritti
+              degli utenti: nessuna distinzione può essere compiuta per sesso, razza, lingua, provenienza, religione
+              ed opinioni politiche.
+            </p>
+            <p class="text-right">
+              <cite class="lead color color-cdv">— Centro Diagnostico Valdichiana</cite>
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6 ">
+            <div class="panel-group ms-collapse" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-cdv">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a class="withripple" role="button" data-toggle="collapse" data-parent="#accordion"
+                      href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fad fa-scroll-old"></i> Carta dei Servizi </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                  aria-labelledby="headingOne">
+                  <div class="panel-body">
+
+                    <h4 class="right-line">Società</h4>
+                    <p>Il Centro Diagnostico Valdichiana è gestito dall’ omonima società Centro Diagnostico
+                      Valdichiana s.r.l. che nasce nel 2018 a Foiano della Chiana</p>
+                    <p>L’amministrazione del Centro Diagnostico Valdichiana ambisce a diventare un punto di
+                      riferimento nella zona Valdichiana per quanto concerne l’assistenza specialistica e la
+                      diagnostica per immagini.</p>
+
+                    <h4 class="right-line">Missione</h4>
+                    <p>La missione è la filosofia a cui si ispira il centro Diagnostico Valdichiana che pone il
+                      ccittadino al centro di un processo organizzativo che parte dall’accettazione e porta fino al
+                      termine della prestazione sanitaria dando sempre importanza ad un’assistenza di alto livello
+                      garantendo bassi tempi di attesa ed un rapporto empatico.</p>
+
+                    <p>L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di
+                      tempo, economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale
+                      in continuo cambiamento. L’obiettivo di creare un coinvolgimento attivo dell’utente con il
+                      personale sanitario attraverso il dialogo e l’ascolto è volto a creare un percorso migliore da
+                      seguire perché personalizzato.</p>
+
+                    <p>L’obiettivo che il centro si propone di perseguire è pertanto l’attenzione verso l’utente,
+                      mediante il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una
+                      periodica riorganizzazione di processi e procedure interne.
+                    </p>
+                    <hr class="dotted">
+                    <h5> 2.1 Obiettivi ed elementi</h5>
+                    <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
+                      organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni
+                      e alle attese dei propri utenti in un contesto di buona gestione delle risorse umane e
+                      tecnologiche.</p>
+
+                    <p>La professionalità degli operatori, la qualità delle tecniche e dei servizi, i limitati tempi
+                      di attesa, l’alto livello della tecnologia ed il miglior comfort ambientale, contribuiscono al
+                      raggiungimento di quegli obiettivi prefissati quali: il diritto alla salute, l’innovazione, la
+                      prevenzione, l’efficienza, l’efficacia.
+
+                    </p>
+
+                    <p>L’erogazione del servizio si basa sul principio di eguaglianza dei diritti degli utenti:
+                      nessuna distinzione può essere compiuta per sesso, razza, lingua, provenienza, religione ed
+                      opinioni politiche.
+
+                    </p>
+                    <p>I soggetti erogatori dei servizi sono tenuti ad adottare le iniziative necessarie per
+                      adeguare le modalità di prestazione del servizio alle esigenze degli utenti portatori di
+                      handicap.
+
+                    </p>
+                    <p>Sarà quindi responsabilità della Direzione del Centro Diagnostico Valdichiana comunicare la
+                      Politica per la Qualità al suo personale attraverso riunioni, corsi, incontri, giornate di
+                      formazione, comunicazioni verbali e scritte, aggiornamenti del sito web ecc…
+
+                    </p>
+
+                    <p>La tutela del diritto alla salute presuppone il riconoscimento e la difesa dei seguenti
+                      principi. La Carta, scritta nel 2002 su iniziativa di Active Citizenship Network in
+                      collaborazione con 12 organizzazioni civiche dei Paesi dell’Unione europea, proclama 14
+                      diritti dei pazienti che, nel loro insieme, mirano a garantire un “alto livello di protezione
+                      della salute umana” assicurando l’elevata qualità dei servizi erogati dai diversi sistemi
+                      sanitari nazionali in Europa.
+
+                    </p>
+
+                    <p>I 14 diritti sono una concretizzazione di diritti fondamentali (rif. art. 35 della Carta dei
+                      diritti fondamentali dell’Unione europea) e, come tali, devono essere riconosciuti e
+                      rispettati in ogni Paese; essi sono correlati con doveri e responsabilità che sia i cittadini
+                      che gli altri attori della sanità devono assumere.</p>
+                    <p>La Carta si applica a tutti gli individui, riconoscendo il fatto che le differenze, come
+                      l’età, il genere, la religione, lo status socio-economico, il livello di alfabetizzazione,
+                      ecc., possono influenzare i bisogni individuali di assistenza sanitaria.
+
+                    </p>
+
+                    <h6>a. Diritto a misure di prevenzione.</h6>
+                    <p>Ogni individuo ha diritto a servizi appropriati per prevenire la malattia.
+                    </p>
+
+                    <h6>b. Diritto all’accesso.
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di accedere ai servizi sanitari che il suo stato di salute
+                      richiede. I servizi sanitari devono garantire eguale accesso a ognuno, senza discriminazioni
+                      sulla base delle risorse finanziarie, del luogo di residenza, del tipo di malattia o del
+                      momento di accesso al servizio.
+                    </p>
+
+                    <h6>c. Diritto alla informazione.
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di accedere a tutte le informazioni che riguardano il suo stato
+                      di salute, i servizi sanitari e il modo in cui utilizzarli, nonché a tutte quelle informazioni
+                      che la ricerca scientifica e l’innovazione tecnologica rendono disponibili.
+
+                    </p>
+
+                    <h6>d. Diritto alla privacy e alla confidenzialità.
+                    </h6>
+                    <p>Ogni individuo ha il diritto alla confidenzialità delle informazioni di carattere personale,
+                      incluse quelle che riguardano il suo stato di salute e le possibili procedure diagnostiche o
+                      terapeutiche, così come ha diritto alla protezione della sua privacy durante l’attuazione di
+                      esami diagnostici, visite specialistiche e trattamenti medico sanitario in generale.
+                    </p>
+
+                    <h6>e. Diritto al rispetto del tempo dei pazienti.
+                    </h6>
+
+                    <p>Ogni individuo ha diritto a ricevere i necessari trattamenti sanitari in tempi brevi e
+                      predeterminati. Questo diritto si applica a ogni fase del trattamento.
+
+                    </p>
+
+                    <h6>f. Diritto al rispetto di standard di qualità.
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di accedere a servizi sanitari di alta qualità, sulla base della
+                      definizione e del rispetto di standard ben precisi.
+
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
-                  organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni e alle
-                  attese dei propri utenti in un contesto di buona gestione delle risorse umane e tecnologiche.La
-                  professionalità degli operatori, la qualità delle tecniche e dei servizi, i limitati tempi di attesa,
-                  l’alto livello della tecnologia ed il miglior comfort ambientale, contribuiscono al raggiungimento di
-                  quegli obiettivi prefissati quali: il diritto alla salute, l’innovazione, la prevenzione,
-                  l’efficienza, l’efficacia.L’erogazione del servizio si basa sul principio di eguaglianza dei diritti
-                  degli utenti: nessuna distinzione può essere compiuta per sesso, razza, lingua, provenienza, religione
-                  ed opinioni politiche.
-                </p>
-                <p class="text-right">
-                  <cite class="lead color color-cdv">— Centro Diagnostico Valdichiana</cite>
-                </p>
+              <div class="panel panel-cdv">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion"
+                      href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fad fa-gavel"></i> Diritti del Malato </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <h4 class="right-line ">Carta Europea dei Diritti del Malato
+                    </h4>
+
+                    <h6>a. Diritto al consenso.
+                    </h6>
+                    <p>Ogni individuo ha il diritto di accedere a tutte le informazioni che possono metterlo in
+                      grado di partecipare attivamente alle decisioni che riguardano la sua salute. Queste
+                      informazioni sono un prerequisito per ogni procedura e trattamento, ivi compresa la
+                      partecipazione alle sperimentazioni.
+
+                    </p>
+
+                    <h6>b. Diritto alla libera scelta.
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di scegliere liberamente tra differenti procedure ed erogatori
+                      di trattamenti sanitari sulla base di informazioni adeguate.
+
+                    </p>
+
+                    <h6>c. Diritto all’innovazione.
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di accedere a procedure innovative, incluse quelle diagnostiche,
+                      in linea con gli standard internazionali e indipendentemente da considerazioni economiche o
+                      finanziarie.
+
+                    </p>
+
+                    <h6>d. Diritto a evitare le sofferenze e il dolore non necessari.
+
+                    </h6>
+                    <p>Ogni individuo ha il diritto di evitare quanta più sofferenza possibile, in ogni fase della
+                      sua malattia.
+
+                    </p>
+
+                    <h6>e. Diritto a un trattamento personalizzato.
+
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto a programmi diagnostici o terapeutici il più possibile adatti
+                      alle sue esigenze personali.
+
+
+
+                    </p>
+
+                    <h6>f. Diritto al reclamo.
+
+                    </h6>
+
+                    <p>Ogni individuo ha il diritto di reclamare ogni qualvolta abbia subito un danno e di ricevere
+                      una risposta.
+
+                    <h6>g. Diritto al risarcimento.
+                    </h6>
+
+
+                    <p>Ogni individuo ha il diritto di ricevere un risarcimento adeguato, in tempi ragionevolmente
+                      brevi, ogni qualvolta abbia subito un danno fisico, morale o psicologico causato dai servizi
+                      sanitari.</p>
+
+                    <p>Il Centro Diagnostico Valdichiana riconosce ed accoglie i diritti del paziente/utente al fine
+                      di tutelare il suo diritto alla salute come parte integrante dell’attività assistenziale.
+
+                    </p>
+
+                    </p>
+                  </div>
+                </div>
               </div>
+              <div class="panel panel-cdv">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion"
+                      href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fad fa-clipboard-list"></i> Elementi di Qualità </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                  aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Garantire l’uniformità di accesso alle prestazioni sanitarie;
+                      </li>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Garantire la qualità tecnica delle prestazioni;
+                      </li>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Garantire la qualità organizzativa del funzionamento della struttura;
+                      </li>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Garantire la sicurezza degli operatori e degli utenti;
+                      </li>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Valorizzare la professionalità degli operatori;</li>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Garantire i diritti e la soddisfazione degli utenti.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
             </div>
+          </div>
+          <div class="col-md-6">
 
-            <div class="row mt-4">
-              <div class="col-md-6 ">
-                <div class="panel-group ms-collapse" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-cdv">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a class="withripple" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          <i class="fad fa-scroll-old"></i> Carta dei Servizi </a>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                      aria-labelledby="headingOne">
-                      <div class="panel-body">
+            <div class=" panel-group ms-collapse" id="accordion-2" role="tablist" aria-multiselectable="true">
 
-                        <h4 class="right-line">Società</h4>
-                        <p>Il Centro Diagnostico Valdichiana è gestito dall’ omonima società Centro Diagnostico
-                          Valdichiana s.r.l. che nasce nel 2018 a Foiano della Chiana</p>
-                        <p>L’amministrazione del Centro Diagnostico Valdichiana ambisce a diventare un punto di
-                          riferimento nella zona Valdichiana per quanto concerne l’assistenza specialistica e la
-                          diagnostica per immagini.</p>
 
-                        <h4 class="right-line">Missione</h4>
-                        <p>La missione è la filosofia a cui si ispira il centro Diagnostico Valdichiana che pone il
-                          ccittadino al centro di un processo organizzativo che parte dall’accettazione e porta fino al
-                          termine della prestazione sanitaria dando sempre importanza ad un’assistenza di alto livello
-                          garantendo bassi tempi di attesa ed un rapporto empatico.</p>
+              <div class="panel panel-cdv">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion-2"
+                      href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <i class="fad fa-sitemap"></i> Struttura e Organizzazzione </a>
+                  </h4>
+                </div>
 
-                        <p>L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di
-                          tempo, economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale
-                          in continuo cambiamento. L’obiettivo di creare un coinvolgimento attivo dell’utente con il
-                          personale sanitario attraverso il dialogo e l’ascolto è volto a creare un percorso migliore da
-                          seguire perché personalizzato.</p>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                  aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    <p>La Nuova Struttura di 750 mq è composta di locali facilmente accessibili, estremamente
+                      funzionali, dotati di tutti i comfort e costruiti nel pieno rispetto della normativa vigente.
+                      I nostri punti di forza corrispondono ai desideri dei nostri utenti: massima riservatezza, una
+                      cortese, disponibile e chiara accoglienza che guidi il paziente verso le competenze dei
+                      migliori specialisti e conseguenti prestazioni sanitarie di qualità in tempi rapidi.</p>
+                    <p>La struttura è costituita da piano terra, piano primo, piano secondo.
 
-                        <p>L’obiettivo che il centro si propone di perseguire è pertanto l’attenzione verso l’utente,
-                          mediante il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una
-                          periodica riorganizzazione di processi e procedure interne.
-                        </p>
-                        <hr class="dotted">
-                        <h5> 2.1 Obiettivi ed elementi</h5>
-                        <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
-                          organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni
-                          e alle attese dei propri utenti in un contesto di buona gestione delle risorse umane e
-                          tecnologiche.</p>
+                    </p>
+                    <p>E’ possibile accedere al piano terra tramite scale o tramite rampa. All’ingresso del
+                      poliambulatorio è sito il front office punto accoglienza e centralmente una ampia sala
+                      d’attesa ben illuminata, dalla quale si accede ad un corridoio che porta agli ambulatori di
+                      diagnostica per immagini e al punto prelievi.
 
-                        <p>La professionalità degli operatori, la qualità delle tecniche e dei servizi, i limitati tempi
-                          di attesa, l’alto livello della tecnologia ed il miglior comfort ambientale, contribuiscono al
-                          raggiungimento di quegli obiettivi prefissati quali: il diritto alla salute, l’innovazione, la
-                          prevenzione, l’efficienza, l’efficacia.
+                    </p>
+                    <p>I percorsi all’intero della struttura sono ben definiti da una cartellonistica comprensibile
+                      e ben visibile.
 
-                        </p>
+                    </p>
 
-                        <p>L’erogazione del servizio si basa sul principio di eguaglianza dei diritti degli utenti:
-                          nessuna distinzione può essere compiuta per sesso, razza, lingua, provenienza, religione ed
-                          opinioni politiche.
+                    <h5>L’organizzazione
 
-                        </p>
-                        <p>I soggetti erogatori dei servizi sono tenuti ad adottare le iniziative necessarie per
-                          adeguare le modalità di prestazione del servizio alle esigenze degli utenti portatori di
-                          handicap.
+                    </h5>
+                    <p>Il Front office, situato all’ingresso della struttura, è composto da personale qualificato
+                      pronto a darvi tutte le informazioni inerenti:
 
-                        </p>
-                        <p>Sarà quindi responsabilità della Direzione del Centro Diagnostico Valdichiana comunicare la
-                          Politica per la Qualità al suo personale attraverso riunioni, corsi, incontri, giornate di
-                          formazione, comunicazioni verbali e scritte, aggiornamenti del sito web ecc…
+                    </p>
 
-                        </p>
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        prestazioni effettuate nella struttura;</li>
 
-                        <p>La tutela del diritto alla salute presuppone il riconoscimento e la difesa dei seguenti
-                          principi. La Carta, scritta nel 2002 su iniziativa di Active Citizenship Network in
-                          collaborazione con 12 organizzazioni civiche dei Paesi dell’Unione europea, proclama 14
-                          diritti dei pazienti che, nel loro insieme, mirano a garantire un “alto livello di protezione
-                          della salute umana” assicurando l’elevata qualità dei servizi erogati dai diversi sistemi
-                          sanitari nazionali in Europa.
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> modalità d’accesso alle
+                        prestazioni;</li>
 
-                        </p>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> modalità di ritiro dei referti
+                        (tempi e orari);</li>
 
-                        <p>I 14 diritti sono una concretizzazione di diritti fondamentali (rif. art. 35 della Carta dei
-                          diritti fondamentali dell’Unione europea) e, come tali, devono essere riconosciuti e
-                          rispettati in ogni Paese; essi sono correlati con doveri e responsabilità che sia i cittadini
-                          che gli altri attori della sanità devono assumere.</p>
-                        <p>La Carta si applica a tutti gli individui, riconoscendo il fatto che le differenze, come
-                          l’età, il genere, la religione, lo status socio-economico, il livello di alfabetizzazione,
-                          ecc., possono influenzare i bisogni individuali di assistenza sanitaria.
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> informative sulla privacy e
+                        sulle prestazioni sanitarie erogate;</li>
 
-                        </p>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> percorsi di prevenzione;</li>
 
-                        <h6>a. Diritto a misure di prevenzione.</h6>
-                        <p>Ogni individuo ha diritto a servizi appropriati per prevenire la malattia.
-                        </p>
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> costi delle prestazioni e le
+                        modalità di pagamento.</li>
+                    </ul>
+                    <p>Lo stesso personale provvederà all’accettazione, quindi, alla registrazione dei dati
+                      personali nel software gestionale ed effettuare il pagamento delle prestazione nelle modalità
+                      più avanti descritte.
 
-                        <h6>b. Diritto all’accesso.
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di accedere ai servizi sanitari che il suo stato di salute
-                          richiede. I servizi sanitari devono garantire eguale accesso a ognuno, senza discriminazioni
-                          sulla base delle risorse finanziarie, del luogo di residenza, del tipo di malattia o del
-                          momento di accesso al servizio.
-                        </p>
-
-                        <h6>c. Diritto alla informazione.
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di accedere a tutte le informazioni che riguardano il suo stato
-                          di salute, i servizi sanitari e il modo in cui utilizzarli, nonché a tutte quelle informazioni
-                          che la ricerca scientifica e l’innovazione tecnologica rendono disponibili.
-
-                        </p>
-
-                        <h6>d. Diritto alla privacy e alla confidenzialità.
-                        </h6>
-                        <p>Ogni individuo ha il diritto alla confidenzialità delle informazioni di carattere personale,
-                          incluse quelle che riguardano il suo stato di salute e le possibili procedure diagnostiche o
-                          terapeutiche, così come ha diritto alla protezione della sua privacy durante l’attuazione di
-                          esami diagnostici, visite specialistiche e trattamenti medico sanitario in generale.
-                        </p>
-
-                        <h6>e. Diritto al rispetto del tempo dei pazienti.
-                        </h6>
-
-                        <p>Ogni individuo ha diritto a ricevere i necessari trattamenti sanitari in tempi brevi e
-                          predeterminati. Questo diritto si applica a ogni fase del trattamento.
-
-                        </p>
-
-                        <h6>f. Diritto al rispetto di standard di qualità.
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di accedere a servizi sanitari di alta qualità, sulla base della
-                          definizione e del rispetto di standard ben precisi.
-
-                        </p>
-                      </div>
-                    </div>
+                    </p>
                   </div>
-                  <div class="panel panel-cdv">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <i class="fad fa-gavel"></i> Diritti del Malato </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        <h4 class="right-line ">Carta Europea dei Diritti del Malato
-                        </h4>
-
-                        <h6>a. Diritto al consenso.
-                        </h6>
-                        <p>Ogni individuo ha il diritto di accedere a tutte le informazioni che possono metterlo in
-                          grado di partecipare attivamente alle decisioni che riguardano la sua salute. Queste
-                          informazioni sono un prerequisito per ogni procedura e trattamento, ivi compresa la
-                          partecipazione alle sperimentazioni.
-
-                        </p>
-
-                        <h6>b. Diritto alla libera scelta.
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di scegliere liberamente tra differenti procedure ed erogatori
-                          di trattamenti sanitari sulla base di informazioni adeguate.
-
-                        </p>
-
-                        <h6>c. Diritto all’innovazione.
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di accedere a procedure innovative, incluse quelle diagnostiche,
-                          in linea con gli standard internazionali e indipendentemente da considerazioni economiche o
-                          finanziarie.
-
-                        </p>
-
-                        <h6>d. Diritto a evitare le sofferenze e il dolore non necessari.
-
-                        </h6>
-                        <p>Ogni individuo ha il diritto di evitare quanta più sofferenza possibile, in ogni fase della
-                          sua malattia.
-
-                        </p>
-
-                        <h6>e. Diritto a un trattamento personalizzato.
-
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto a programmi diagnostici o terapeutici il più possibile adatti
-                          alle sue esigenze personali.
-
-
-
-                        </p>
-
-                        <h6>f. Diritto al reclamo.
-
-                        </h6>
-
-                        <p>Ogni individuo ha il diritto di reclamare ogni qualvolta abbia subito un danno e di ricevere
-                          una risposta.
-
-                        <h6>g. Diritto al risarcimento.
-                        </h6>
-
-
-                        <p>Ogni individuo ha il diritto di ricevere un risarcimento adeguato, in tempi ragionevolmente
-                          brevi, ogni qualvolta abbia subito un danno fisico, morale o psicologico causato dai servizi
-                          sanitari.</p>
-
-                        <p>Il Centro Diagnostico Valdichiana riconosce ed accoglie i diritti del paziente/utente al fine
-                          di tutelare il suo diritto alla salute come parte integrante dell’attività assistenziale.
-
-                        </p>
-
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-cdv">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <i class="fad fa-clipboard-list"></i> Elementi di Qualità </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        <ul class="list-group">
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Garantire l’uniformità di accesso alle prestazioni sanitarie;
-                          </li>
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Garantire la qualità tecnica delle prestazioni;
-                          </li>
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Garantire la qualità organizzativa del funzionamento della struttura;
-                          </li>
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Garantire la sicurezza degli operatori e degli utenti;
-                          </li>
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Valorizzare la professionalità degli operatori;</li>
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Garantire i diritti e la soddisfazione degli utenti.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-
-                  </div>
-
                 </div>
               </div>
-              <div class="col-md-6">
 
-                <div class=" panel-group ms-collapse" id="accordion-2" role="tablist" aria-multiselectable="true">
-
-
-                  <div class="panel panel-cdv">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                      <h4 class="panel-title">
-                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion-2"
-                          href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <i class="fad fa-sitemap"></i> Struttura e Organizzazzione </a>
-                      </h4>
-                    </div>
-
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingFour">
-                      <div class="panel-body">
-                        <p>La Nuova Struttura di 750 mq è composta di locali facilmente accessibili, estremamente
-                          funzionali, dotati di tutti i comfort e costruiti nel pieno rispetto della normativa vigente.
-                          I nostri punti di forza corrispondono ai desideri dei nostri utenti: massima riservatezza, una
-                          cortese, disponibile e chiara accoglienza che guidi il paziente verso le competenze dei
-                          migliori specialisti e conseguenti prestazioni sanitarie di qualità in tempi rapidi.</p>
-                        <p>La struttura è costituita da piano terra, piano primo, piano secondo.
-
-                        </p>
-                        <p>E’ possibile accedere al piano terra tramite scale o tramite rampa. All’ingresso del
-                          poliambulatorio è sito il front office punto accoglienza e centralmente una ampia sala
-                          d’attesa ben illuminata, dalla quale si accede ad un corridoio che porta agli ambulatori di
-                          diagnostica per immagini e al punto prelievi.
-
-                        </p>
-                        <p>I percorsi all’intero della struttura sono ben definiti da una cartellonistica comprensibile
-                          e ben visibile.
-
-                        </p>
-
-                        <h5>L’organizzazione
-
-                        </h5>
-                        <p>Il Front office, situato all’ingresso della struttura, è composto da personale qualificato
-                          pronto a darvi tutte le informazioni inerenti:
-
-                        </p>
-
-                        <ul class="list-group">
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            prestazioni effettuate nella struttura;</li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> modalità d’accesso alle
-                            prestazioni;</li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> modalità di ritiro dei referti
-                            (tempi e orari);</li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> informative sulla privacy e
-                            sulle prestazioni sanitarie erogate;</li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> percorsi di prevenzione;</li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> costi delle prestazioni e le
-                            modalità di pagamento.</li>
-                        </ul>
-                        <p>Lo stesso personale provvederà all’accettazione, quindi, alla registrazione dei dati
-                          personali nel software gestionale ed effettuare il pagamento delle prestazione nelle modalità
-                          più avanti descritte.
-
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel panel-cdv">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                      <h4 class="panel-title">
-                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion-2"
-                          href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          <i class="fad fa-users"></i> Risorse Umane </a>
-                      </h4>
-                    </div>
-
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingFive">
-                      <div class="panel-body">
-                        <p>Il Centro Diagnostico Valdichiana ha stipulato con ciascun professionista operante al suo
-                          interno un regolare contratto di collaborazione professionale. E’ stato creato, per tutti i
-                          membri del personale, un fascicolo contenente: i dati anagrafici e gli estremi dei titoli
-                          professionali di tutto il personale che opera in campo sanitario, le autocertificazioni della
-                          loro compatibilità, l’abilitazione alla professione, l’assicurazione, il contratto di
-                          collaborazione e la liberatoria per il trattamento dei dati personali.
-
-                        </p>
-                        <p>Tutte le figure professionali all’interno di Centro Diagnostico Valdichiana
-                          (indipendentemente dal fatto che il tipo di contratto sia di collaborazione professionale, di
-                          dipendente o contratto esterno), durante l’orario di lavoro, sono identificabili tramite il
-                          cartellino di riconoscimento sul quale sono indicati il codice identificativo, la qualifica,
-                          la funzione all’interno dello staff e il nominativo.
-
-
-
-                        </p>
-
-                        <p>Per favorire ulteriormente l’utente, nel riconoscimento del personale operante presso Centro
-                          Diagnostico Valdichiana, sono fornite al personale uniformi differenziate nel loro colore così
-                          come di seguito descritto:
-
-
-
-                        </p>
-                        <ul class="list-group">
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i>
-                            Divisa blu: casacca e pantaloni – personale tecnico sanitario;
-                          </li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> Camice bianco: personale
-                            medico;
-                          </li>
-
-                          <li class="list-group-item"><i class="fad fa-caret-right"></i> Abito nero: personale
-                            amministrativo.
-                          </li>
-
-                        </ul>
-                        <p>Su tutte le uniformi e divise è presente sulla parte superiore il logo di Centro Diagnostico
-                          Valdichiana. Sotto è rappresentato un “Modello di cartellino di riconoscimento”.
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-
+              <div class="panel panel-cdv">
+                <div class="panel-heading" role="tab" id="headingFive">
+                  <h4 class="panel-title">
+                    <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion-2"
+                      href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <i class="fad fa-users"></i> Risorse Umane </a>
+                  </h4>
                 </div>
-              </div>
-            </div>
 
-            <div class="row mt-4">
-              <!--   Inicio Galleria -->
-              <div id="carousel-galleria" class="azienda-carousel carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-galleria" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="1"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="2"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="3"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="4"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="5"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="6"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="7"></li>
-                  <li data-target="#carousel-galleria" data-slide-to="8"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="img/galleria/clinica-1.jpg" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="img/galleria/clinica-2.jpg" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="img/galleria/clinica-3.jpg" alt="...">
-                  </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                  aria-labelledby="headingFive">
+                  <div class="panel-body">
+                    <p>Il Centro Diagnostico Valdichiana ha stipulato con ciascun professionista operante al suo
+                      interno un regolare contratto di collaborazione professionale. E’ stato creato, per tutti i
+                      membri del personale, un fascicolo contenente: i dati anagrafici e gli estremi dei titoli
+                      professionali di tutto il personale che opera in campo sanitario, le autocertificazioni della
+                      loro compatibilità, l’abilitazione alla professione, l’assicurazione, il contratto di
+                      collaborazione e la liberatoria per il trattamento dei dati personali.
 
-                  <div class="item">
-                    <img src="img/galleria/clinica-4.jpg" alt="...">
-                  </div>
+                    </p>
+                    <p>Tutte le figure professionali all’interno di Centro Diagnostico Valdichiana
+                      (indipendentemente dal fatto che il tipo di contratto sia di collaborazione professionale, di
+                      dipendente o contratto esterno), durante l’orario di lavoro, sono identificabili tramite il
+                      cartellino di riconoscimento sul quale sono indicati il codice identificativo, la qualifica,
+                      la funzione all’interno dello staff e il nominativo.
 
-                  <div class="item">
-                    <img src="img/galleria/clinica-5.jpg" alt="...">
-                  </div>
 
-                  <div class="item">
-                    <img src="img/galleria/clinica-6.jpg" alt="...">
-                  </div>
 
-                  <div class="item">
-                    <img src="img/galleria/clinica-7.jpg" alt="...">
-                  </div>
+                    </p>
 
-                  <div class="item">
-                    <img src="img/galleria/clinica11.jpg" alt="...">
-                  </div>
+                    <p>Per favorire ulteriormente l’utente, nel riconoscimento del personale operante presso Centro
+                      Diagnostico Valdichiana, sono fornite al personale uniformi differenziate nel loro colore così
+                      come di seguito descritto:
 
+
+
+                    </p>
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i>
+                        Divisa blu: casacca e pantaloni – personale tecnico sanitario;
+                      </li>
+
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> Camice bianco: personale
+                        medico;
+                      </li>
+
+                      <li class="list-group-item"><i class="fad fa-caret-right"></i> Abito nero: personale
+                        amministrativo.
+                      </li>
+
+                    </ul>
+                    <p>Su tutte le uniformi e divise è presente sulla parte superiore il logo di Centro Diagnostico
+                      Valdichiana. Sotto è rappresentato un “Modello di cartellino di riconoscimento”.
+                    </p>
+
+                  </div>
                 </div>
-                <!-- Controls -->
-                <a href="#carousel-galleria"
-                  class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv left carousel-control" role="button"
-                  data-slide="prev">
-                  <i class="fad fa-chevron-left"></i> </a>
-                <a href="#carousel-galleria"
-                  class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv right carousel-control" role="button"
-                  data-slide="next">
-                  <i class="fad fa-chevron-right"></i> </a>
               </div>
 
             </div>
           </div>
         </div>
-      </div>
-   </div>
 
-   </div>
-      <!-- sb-site-container -->
-      <!-- MENU MOBILE -->
-      <div class="ms-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
-        <header class="ms-slidebar-header">
-          <div class="ms-slidebar-login">
-            <a href="javascript:void(0)" class="withripple">
-              <i class="fas fa-user"></i> Login</a>
-            <a href="javascript:void(0)" class="withripple">
-              <i class="fas fa-user-plus"></i> Registrati</a>
-          </div>
-          <div class="ms-slidebar-title">
-            <form class="search-form">
-              <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
-              <label for="search-box-slidebar">
-                <i class="fad fa-search"></i>
-              </label>
-            </form>
+        <div class="row mt-4">
+          <!--   Inicio Galleria -->
+          <div id="carousel-galleria" class="azienda-carousel carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-galleria" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-galleria" data-slide-to="1"></li>
+              <li data-target="#carousel-galleria" data-slide-to="2"></li>
+              <li data-target="#carousel-galleria" data-slide-to="3"></li>
+              <li data-target="#carousel-galleria" data-slide-to="4"></li>
+              <li data-target="#carousel-galleria" data-slide-to="5"></li>
+              <li data-target="#carousel-galleria" data-slide-to="6"></li>
+              <li data-target="#carousel-galleria" data-slide-to="7"></li>
+              <li data-target="#carousel-galleria" data-slide-to="8"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="assets/img/galleria/clinica-1.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img src="assets/img/galleria/clinica-2.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img src="assets/img/galleria/clinica-3.jpg" alt="...">
+              </div>
 
+              <div class="item">
+                <img src="assets/img/galleria/clinica-4.jpg" alt="...">
+              </div>
 
-            <div class="ms-slidebar-t">
-              <span class="ms-logo ms-logo-sm"><img src="img/favicon.ico" style="width: 100%;"></span>
-              <h3>CD
-                <span>V</span>
-              </h3>
+              <div class="item">
+                <img src="assets/img/galleria/clinica-5.jpg" alt="...">
+              </div>
+
+              <div class="item">
+                <img src="assets/img/galleria/clinica-6.jpg" alt="...">
+              </div>
+
+              <div class="item">
+                <img src="assets/img/galleria/clinica-7.jpg" alt="...">
+              </div>
+
+              <div class="item">
+                <img src="assets/img/galleria/clinica-11.jpg" alt="...">
+              </div>
+
             </div>
+            <!-- Controls -->
+            <a href="#carousel-galleria"
+              class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv left carousel-control" role="button"
+              data-slide="prev">
+              <i class="fad fa-chevron-left"></i> </a>
+            <a href="#carousel-galleria"
+              class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv right carousel-control" role="button"
+              data-slide="next">
+              <i class="fad fa-chevron-right"></i> </a>
           </div>
-        </header>
-        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-          <li class="panel" role="tab" id="sch1">
-            <a class="link" href="#index">
-              Home </a>
 
-          </li>
-          <li class="panel" role="tab" id="sch2">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
-              aria-expanded="false" aria-controls="sc2">
-              Prestazioni </a>
-            <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
-              <li>
-                <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
-              </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              <li>
-                <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
-              </li>
+  </div>
 
+  <!-- container -->
+  <aside class="z-footbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col" style="">
+          <div class="z-footbar-block">
+            <h3 class="z-footbar-title">Mappa del sito
+            </h3>
+            <ul class="list-unstyled z-icon-list three_cols">
               <li>
-                <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
+                <a href="index.html">
+                  Home</a>
               </li>
               <li>
-                <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
+                <a href="prestazioni.html">
+                  Prestazioni</a>
+              </li>
+              <li>
+                <a href="professionist.html"> Profissionisti</a>
+              </li>
+              <li>
+                <a href="contatti.html">
+                  Contatti</a>
+              </li>
+              <li>
+                <a href="azienda.html">
+                  Chi Siamo</a>
+              </li>
+              <li>
+                <a href="faq.html">
+                  Come fare per</a>
+              </li>
+              <li>
+                <a href="codice.html">
+                  Codice Etico</a>
+              </li>
+              <li>
+                <a href="professionist.html">
+                  Specialistiche</a>
+              </li>
+              <li>
+                <a href="esami.html">
+                  Esami</a>
+              </li>
+              <li>
+                <a href="ambulatorio.html">
+                  Amb. Infermieristico</a>
+              </li>
+              <li>
+                <a href="punto.html">
+                  Punto Prelievi</a>
               </li>
 
             </ul>
-          </li>
-          <li class="panel" role="tab" id="sch4">
-            <a class="link" href="professionisti.html">
-              Professionisti </a>
+          </div>
 
-          </li>
-          <li class="panel" role="tab" id="sch5">
-            <a class="link" href="contatti.html">
-              Contatti </a>
+        </div>
+        <div class="col-md-4 col-sm-7 footer-col " style="">
+          <div class="z-footbar-block">
+            <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
+            <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
+              ci piace lo spam.</p>
+            <form>
+              <div class="form-group label-floating mt-2 mb-1 is-empty">
+                <div class="input-group z-input-subscribe">
+                  <label class="control-label" for="z-subscribe">
+                    <i class="fad fa-envelope"></i>Inserisci la tua email
+                  </label>
+                  <input type="email" id="z-subscribe" class="form-control">
+                </div>
+                <span class="zncn-input"></span>
+              </div>
+              <button class="btn-subs" type="button">Sottoscrivi</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
+          <div class="z-footbar-block">
+            <h3 class="z-footbar-title">Contattaci
+            </h3>
+            <address class="no-mb">
+              <p>
+                <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
+              <p>
+                <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+              </p>
+              <p>
+                <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
+              </p>
+              <p>
+                <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
+              </p>
+              <p>
+                <i class="fas fa-fax color-cdv"></i> +39 0575 649719
+              </p>
 
-          </li>
-        </ul>
-        <hr>
-        <div class="cdv-social ms-slidebar-block">
-          <h4 class="ms-slidebar-block-title">Social</h4>
-          <div class="cdv-social">
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
-              <i class="fab fa-facebook-f"></i>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
-              <i class="fab fa-linkedin"></i>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
-              <i class="fab fa-instagram"></i>
-              <div class="ripple-container"></div>
-            </a>
+            </address>
+          </div>
 
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <div class="footer-social">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 footer-col text-center ">
+          <div class="z-footbar-block">
+            <h3>Social</h3>
+            <div>
+              <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
+                class="btn-circle  btn-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
+                class="btn-circle  btn-instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
+                target="_blank" class="btn-circle  btn-linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <script src="assets/js/plugins.min.js"></script>
-      <script src="assets/js/app.min.js"></script>
-      <script src="assets/js/configurator.min.js"></script>
+    </div>
+  </div>
 
-      <script src="assets/js/component-carousels.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+    </div>
+  </footer>
+
+  </div>
+  <!-- sb-site-container -->
+
+  <!-- MENU MOBILE -->
+  <div class="z-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
+
+    <div class="hero-bg-cdv-profile hero-img-profile pt-6  pb-6">
+      <h3 class="index-1 text-center color-white">Centro Diagnostico <strong>Valdichiana</strong>
+      </h3>
+    </div>
+    <header class="z-slidebar-header">
+      
+      <div class="z-slidebar-login">
+        <a href="javascript:void(0)" class="withripple">
+          <i class="fas fa-user"></i> Login</a>
+        <a href="javascript:void(0)" class="withripple">
+          <i class="fas fa-user-plus"></i> Registrati</a>
+      </div>
+      <div class="z-slidebar-title">
+        <form class="search-form">
+          <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
+          <label for="search-box-slidebar">
+            <i class="fad fa-search"></i>
+          </label>
+        </form>
+
+
+        <div class="z-slidebar-t">
+         
+        </div>
+      </div>
+    </header>
+    <ul class="z-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+      <li class="panel" role="tab" id="sch1">
+        <a class="link" href="#index">
+          Home </a>
+
+      </li>
+      <li class="panel" role="tab" id="sch2">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
+          aria-expanded="false" aria-controls="sc2">
+          Prestazioni </a>
+        <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
+          <li>
+            <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
+          </li>
+
+          <li>
+            <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
+          </li>
+
+          <li>
+            <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
+          </li>
+          <li>
+            <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="panel" role="tab" id="sch4">
+        <a class="link" href="professionist.html">
+          Professionisti </a>
+
+      </li>
+      <li class="panel" role="tab" id="sch5">
+        <a class="link" href="contatti.html">
+          Contatti </a>
+
+      </li>
+    </ul>
+    <hr>
+    <div class="cdv-social z-slidebar-block">
+      <h4 class="z-slidebar-block-title">Social</h4>
+      <div class="cdv-social">
+        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+          <div class="ripple-container"></div>
+        </a>
+        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
+          <i class="fab fa-linkedin"></i>
+          <div class="ripple-container"></div>
+        </a>
+        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+          <i class="fab fa-instagram"></i>
+          <div class="ripple-container"></div>
+        </a>
+
+      </div>
+    </div>
+  </div>>
+
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+  <script src="assets/js/plugins.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+
+
 </body>
 
 </html>
