@@ -1,0 +1,135 @@
+/* Dispositivos grandes 992px e superior)  */
+@media only screen and (min-width: 768px) {
+  .titolo-mobile {
+    display: none;
+  }
+
+  .esami h2 {
+    font-size: 2em;
+    padding: 20px 0px 10px 0px;
+    color: #5c6bc0;
+    font-weight: 400;
+  }
+
+  .esami h3 {
+    font-size: 2em;
+    color: #5c6bc0;
+    font-weight: 400;
+    font-family: "lora";
+    font-style: oblique;
+  }
+
+  .esami .card h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .esami h5 {
+    font-weight: 600;
+    color: #757575;
+    text-decoration: underline;
+    font-family: "Lora";
+    margin-left: 30px;
+  }
+
+  .esami h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #757575;
+  }
+  .esami .card {
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .esami .card p {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+  }
+  .esami .card a {
+    transition: 0.3s;
+    background-color: white;
+  }
+  .esami .card a:hover,
+  .esami .card a:focus {
+    color: #fefefe;
+    background-color: #5c6bc0;
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+
+  .esami-top-text {
+    display: none;
+  }
+
+  .styling {
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    font-style: oblique;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .quote {
+    font-size: 18px;
+    position: relative;
+    font-style: oblique;
+    text-align: center;
+    top: 60px;
+  }
+}
+
+.p-tb {
+  padding: 30px 0px 30px 0px !important;
+}
+
+.logo-footer-page {
+  width: 100%;
+  align-items: right;
+}
+
+.logo-footer-page img {
+  width: 40px;
+  margin: 10px;
+  opacity: 0.5;
+}
+
+/* .logo-footer-page:after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background: #5c6bc0;
+  margin: 0px auto;
+  opacity: 0.5;
+}
+*/
+/* .logo-footer-page:before {
+  content: "";
+  display: inline-block;
+  width: 80%;
+  height: 1px;
+  background: #5c6bc0;
+  margin: 0px auto;
+  opacity: 0.5;
+} */
+
+/* Both */
+..plyr {
+  position: relative;
+  width: 100%;
+  min-width: 200px;
+  font-family: Avenir, "Montserrat", Helvetica, Arial, sans-serif;
+  direction: ltr;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+}
+
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+  background: #5c6bc0;
+  color: #fff;
+}
