@@ -26,20 +26,26 @@
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+ 
   <link rel="stylesheet" href="assets/css/news.css">
-  <link rel="stylesheet" href="assets/css/azienda.css">
+  
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
+  <!-- owl-carousel -->
+  <link rel="stylesheet" href="assets/owl/css/carousel.css">
+  <link rel="stylesheet" href="assets/owl/css/theme.css">
+  <link rel="stylesheet" href="assets/owl/css/owl.css">
+
+  <link rel="stylesheet" href="assets/css/responsivo.css">
   <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
 
-  <div id="z-preload" class="z-preload" style="display: none;">
+  <div id="ms-preload" class="ms-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
@@ -47,8 +53,9 @@
       </div>
     </div>
   </div>
+  <!-- Call to Action -->
 
-  <div class="sb-site-container">
+  <div class="sb-site-container ">
 
     <!-- Modal -->
     <div class="modal modal-cdv in" id="z-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -71,10 +78,9 @@
 
             <div class="modal-header-tabs">
               <!--  títulos login -->
-              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
-                    aria-expanded="true">
+                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple">
                     <i class="fas fa-user"></i> Login</a>
                 </li>
 
@@ -225,7 +231,7 @@
       </div>
     </div>
 
-    <header class="z-header z-header-cdv">
+    <header class="z-header z-header-cdv hide-mobile">
       <div class="container container-full">
         <div class="z-title">
           <a href="index.html">
@@ -237,8 +243,8 @@
           </a>
         </div>
         <div class="header-right">
-          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
-            data-toggle="modal" data-target="#z-account-modal">
+          <a href="" class="btn-circle animated zoomInDown animation-delay-8" data-toggle="modal"
+            data-target="#z-account-modal">
             <i class="fad fa-user"></i>
             <div class="ripple-container"></div>
           </a>
@@ -249,8 +255,7 @@
             </label>
           </form>
 
-          <a href="javascript:void(0)"
-            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
+          <a href="" class="btn-circle sb-toggle-left animated zoomInDown animation-delay-10">
             <i class="fad fa-bars"></i>
             <div class="ripple-container"></div>
           </a>
@@ -258,7 +263,7 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-cdv">
       <div class="container container-full">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
@@ -291,8 +296,7 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
-                              Radiografia</a>
+                            <a href="radiografia.html"><i class="fad fa-caret-right"></i> Radiografia</a>
                           </li>
                           <li>
                             <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
@@ -300,7 +304,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="cone.htlm"><i class="fad fa-caret-right"></i> Cone Beam</a>
+                            <a href="cone-beam.html"><i class="fad fa-caret-right"></i> Cone Beam</a>
                           </li>
                           <li>
                             <a href="moc.html"><i class="fad fa-caret-right"></i> Moc</a>
@@ -319,16 +323,14 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
-                              anestesiologia</a>
+                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i> anestesiologia</a>
                           </li>
                           <li>
                             <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
                               broncopneumologia</a>
                           </li>
                           <li>
-                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
-                              cardiologia</a>
+                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i> cardiologia</a>
                           </li>
                           <li>
                             <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
@@ -347,12 +349,10 @@
                               vascolare</a>
                           </li>
                           <li>
-                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
-                              dermatologia</a>
+                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i> dermatologia</a>
                           </li>
                           <li>
-                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
-                              endocrinologia</a>
+                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i> endocrinologia</a>
                           </li>
                           <li>
                             <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
@@ -362,13 +362,11 @@
                               gastroenterologia</a>
                           </li>
                           <li>
-                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
-                              ginecologia</a>
+                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i> ginecologia</a>
                           </li>
 
                           <li>
-                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
-                              legale</a>
+                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina legale</a>
                           </li>
                           <li>
                             <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
@@ -379,8 +377,8 @@
                               lavoro</a>
                           </li>
                           <li>
-                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
-                              dello sport</a>
+                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina dello
+                              sport</a>
                           </li>
                           <li>
                             <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
@@ -434,12 +432,10 @@
                             <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
                           </li>
                           <li>
-                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
-                              psichiatria</a>
+                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i> psichiatria</a>
                           </li>
                           <li>
-                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
-                              psicologia</a>
+                            <a href="psicologia.html"><i class="fad fa-caret-right"></i> psicologia</a>
                           </li>
                         </ul>
                       </div>
@@ -448,8 +444,7 @@
                       <div class="megamenu-block animated fadeInRight animated-2x">
                         <ul class="megamenu-block-list mt-6">
                           <li>
-                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
-                              reumatologia</a>
+                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i> reumatologia</a>
                           </li>
                           <li>
                             <a href="urologia.html">
@@ -464,8 +459,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -477,8 +471,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -509,33 +502,30 @@
       <!-- container -->
     </nav>
 
-
- <!--  Introdução -->
- <div class="intro-intern-override intro-intern-img-citta hero-bg-cdv pt-4">
-  <div class="container ">
-    <div class="text-center">
-      <img src="assets/img/navbar-brand.png" alt=""
-        class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
-      <br>
-      <h1 class="no-m mt-2 animated zoomInDown animation-delay-5 index-1">Chi Siamo</span>
+  <!--  Introdução -->
+  <div class="intro-intern-override img-clinica hero-bg-cdv ">
+    <div class="container ">
+      <div class="text-center">
+        <img src="assets/img/navbar-brand.png" alt=""
+          class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
+        <br>
+        <h1 class="no-m mt-2 animated zoomInDown animation-delay-5 index-1">Chi Siamo</span>
       </h1>
-
-      <p class="filo filo-lg center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Alla continua ricerca dell'eccellenza
+      <p class="animated fadeInUp animation-delay-7 color-white">Alla continua ricerca dell'eccellenza
         del servizio fornito.
       </p>
     </div>
   </div>
 </div>
 
+
   <!--  Conteúdo -->
-<div class="container inter-page index-1">
-  <div class="card azienda wow animated fadeInUp animation-delay-7">
-    <!-- Chi Siamo-->
-    <div class=" animated slideInUp animation-delay-8 mb-6">
-      <div class="card-block">
-        <div class="row">
-          <h2 class="right-line">Chi Siamo</h2>
-          <div class="col-md-6 text-left">
+  <div class="container">
+    <div class="page-containeir animated slideInUp animation-delay-8 mb-6">
+
+      <h2 class="mt-2">Chi Siamo</h2>
+      <div class="row">
+          <div class="col-md-6 text-left mt-4">
             <p class="capitular">
               L’idea del Centro Diagnostico Valdichiana nasce dal desiderio di rispondere in termini di tempo,
               economicità e qualità alle esigenze del territorio e di un Sistema Sanitario Nazionale in continuo
@@ -545,9 +535,10 @@
             <p>L’obiettivo che il centro si propone di perseguire è pertanto l’attenzione verso l’utente, mediante
               il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una periodica
               riorganizzazione di processi e procedure interne.</p>
+              <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria</p>
           </div>
-          <div class="col-md-6">
-            <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
+          <div class="col-md-6 mt-4">
+            <p>
               organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni e alle
               attese dei propri utenti in un contesto di buona gestione delle risorse umane e tecnologiche.La
               professionalità degli operatori, la qualità delle tecniche e dei servizi, i limitati tempi di attesa,
@@ -557,13 +548,13 @@
               degli utenti: nessuna distinzione può essere compiuta per sesso, razza, lingua, provenienza, religione
               ed opinioni politiche.
             </p>
-            <p class="text-right">
-              <cite class="lead color color-cdv">— Centro Diagnostico Valdichiana</cite>
+            <p class="text-right mt-2">
+              <cite class="lead cdv-color">— Centro Diagnostico Valdichiana</cite>
             </p>
           </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-4 azienda">
           <div class="col-md-6 ">
             <div class="panel-group ms-collapse" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-cdv">
@@ -578,14 +569,14 @@
                   aria-labelledby="headingOne">
                   <div class="panel-body">
 
-                    <h4 class="right-line">Società</h4>
+                    <h4>Società</h4>
                     <p>Il Centro Diagnostico Valdichiana è gestito dall’ omonima società Centro Diagnostico
                       Valdichiana s.r.l. che nasce nel 2018 a Foiano della Chiana</p>
                     <p>L’amministrazione del Centro Diagnostico Valdichiana ambisce a diventare un punto di
                       riferimento nella zona Valdichiana per quanto concerne l’assistenza specialistica e la
                       diagnostica per immagini.</p>
 
-                    <h4 class="right-line">Missione</h4>
+                    <h4>Missione</h4>
                     <p>La missione è la filosofia a cui si ispira il centro Diagnostico Valdichiana che pone il
                       ccittadino al centro di un processo organizzativo che parte dall’accettazione e porta fino al
                       termine della prestazione sanitaria dando sempre importanza ad un’assistenza di alto livello
@@ -601,8 +592,8 @@
                       mediante il coinvolgimento dell’utente ed un’adeguata formazione degli operatori con una
                       periodica riorganizzazione di processi e procedure interne.
                     </p>
-                    <hr class="dotted">
-                    <h5> 2.1 Obiettivi ed elementi</h5>
+                    <hr>
+                    <p class="numerado"> 2.1 Obiettivi ed elementi</p>
                     <p>La visione strategica del Centro Diagnostico Valdichiana è orientata a consolidare la propria
                       organizzazione su criteri di adeguatezza e qualità dei servizi offerti in risposta ai bisogni
                       e alle attese dei propri utenti in un contesto di buona gestione delle risorse umane e
@@ -708,7 +699,7 @@
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
-                    <h4 class="right-line ">Carta Europea dei Diritti del Malato
+                    <h4>Carta Europea dei Diritti del Malato
                     </h4>
 
                     <h6>a. Diritto al consenso.
@@ -854,9 +845,9 @@
 
                     </p>
 
-                    <h5>L’organizzazione
+                    <p class="numerado">L’organizzazione
 
-                    </h5>
+                    </p>
                     <p>Il Front office, situato all’ingresso della struttura, è composto da personale qualificato
                       pronto a darvi tutte le informazioni inerenti:
 
@@ -954,62 +945,32 @@
 
         <div class="row mt-4">
           <!--   Inicio Galleria -->
-          <div id="carousel-galleria" class="azienda-carousel carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-galleria" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-galleria" data-slide-to="1"></li>
-              <li data-target="#carousel-galleria" data-slide-to="2"></li>
-              <li data-target="#carousel-galleria" data-slide-to="3"></li>
-              <li data-target="#carousel-galleria" data-slide-to="4"></li>
-              <li data-target="#carousel-galleria" data-slide-to="5"></li>
-              <li data-target="#carousel-galleria" data-slide-to="6"></li>
-              <li data-target="#carousel-galleria" data-slide-to="7"></li>
-              <li data-target="#carousel-galleria" data-slide-to="8"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="assets/img/galleria/clinica-1.jpg" alt="...">
-              </div>
-              <div class="item">
-                <img src="assets/img/galleria/clinica-2.jpg" alt="...">
-              </div>
-              <div class="item">
-                <img src="assets/img/galleria/clinica-3.jpg" alt="...">
-              </div>
 
-              <div class="item">
-                <img src="assets/img/galleria/clinica-4.jpg" alt="...">
-              </div>
+          <div id="cdv" class="hide-mobile">      
+            <div class="span12">
 
-              <div class="item">
-                <img src="assets/img/galleria/clinica-5.jpg" alt="...">
-              </div>
+              <div id="owl-cdv" class="owl-carousel">
+               
+                <div class="item"><img src="assets/owl/img/galleria/clinica-1.jpg" alt="Owl Image"></div>
 
-              <div class="item">
-                <img src="assets/img/galleria/clinica-6.jpg" alt="...">
-              </div>
+                <div class="item"><img src="assets/owl/img/galleria/clinica-2.jpg" alt="Owl Image"></div>
+               
+                <div class="item"><img src="assets/owl/img/galleria/clinica-3.jpg" alt="Owl Image"></div>
+              
+                <div class="item"><img src="assets/owl/img/galleria/clinica-4.jpg" alt="Owl Image"></div>
+               
+                <div class="item"><img src="assets/owl/img/galleria/clinica-5.jpg" alt="Owl Image"></div>
+                
+                <div class="item"><img src="assets/owl/img/galleria/clinica-6.jpg" alt="Owl Image"></div>
 
-              <div class="item">
-                <img src="assets/img/galleria/clinica-7.jpg" alt="...">
-              </div>
+                <div class="item"><img src="assets/owl/img/galleria/clinica-7.jpg" alt="Owl Image"></div>
 
-              <div class="item">
-                <img src="assets/img/galleria/clinica-11.jpg" alt="...">
-              </div>
-
+                <div class="item"><img src="assets/owl/img/galleria/clinica11.jpg" alt="Owl Image"></div>
             </div>
-            <!-- Controls -->
-            <a href="#carousel-galleria"
-              class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv left carousel-control" role="button"
-              data-slide="prev">
-              <i class="fad fa-chevron-left"></i> </a>
-            <a href="#carousel-galleria"
-              class="btn-circle btn-circle-xs btn-circle-raised btn-circle-cdv right carousel-control" role="button"
-              data-slide="next">
-              <i class="fad fa-chevron-right"></i> </a>
           </div>
+        </div>
+
+      
 
         </div>
       </div>
@@ -1019,246 +980,272 @@
 
   </div>
 
-  <!-- container -->
-  <aside class="z-footbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Mappa del sito
-            </h3>
-            <ul class="list-unstyled z-icon-list three_cols">
-              <li>
-                <a href="index.html">
-                  Home</a>
-              </li>
-              <li>
-                <a href="prestazioni.html">
-                  Prestazioni</a>
-              </li>
-              <li>
-                <a href="professionist.html"> Profissionisti</a>
-              </li>
-              <li>
-                <a href="contatti.html">
-                  Contatti</a>
-              </li>
-              <li>
-                <a href="azienda.html">
-                  Chi Siamo</a>
-              </li>
-              <li>
-                <a href="faq.html">
-                  Come fare per</a>
-              </li>
-              <li>
-                <a href="codice.html">
-                  Codice Etico</a>
-              </li>
-              <li>
-                <a href="professionist.html">
-                  Specialistiche</a>
-              </li>
-              <li>
-                <a href="esami.html">
-                  Esami</a>
-              </li>
-              <li>
-                <a href="ambulatorio.html">
-                  Amb. Infermieristico</a>
-              </li>
-              <li>
-                <a href="punto.html">
-                  Punto Prelievi</a>
-              </li>
+ 
+ <!-- container -->
 
-            </ul>
-          </div>
+ <aside class="z-footbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-col" style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Mappa del sito
+          </h3>
+          <ul class="list-unstyled z-icon-list three_cols">
+            <li>
+              <a href="index.html">
+                Home</a>
+            </li>
+            <li>
+              <a href="prestazioni.html">
+                Prestazioni</a>
+            </li>
+            <li>
+              <a href="professionist.html"> Profissionisti</a>
+            </li>
+            <li>
+              <a href="contatti.html">
+                Contatti</a>
+            </li>
+            <li>
+              <a href="azienda.html">
+                Chi Siamo</a>
+            </li>
+            <li>
+              <a href="faq.html">
+                Come fare per</a>
+            </li>
+            <li>
+              <a href="codice.html">
+                Codice Etico</a>
+            </li>
+            <li>
+              <a href="professionist.html">
+                Specialistiche</a>
+            </li>
+            <li>
+              <a href="esami.html">
+                Esami</a>
+            </li>
+            <li>
+              <a href="ambulatorio.html">
+                Amb. Infermieristico</a>
+            </li>
+            <li>
+              <a href="punto.html">
+                Punto Prelievi</a>
+            </li>
 
+          </ul>
         </div>
-        <div class="col-md-4 col-sm-7 footer-col " style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
-            <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
-              ci piace lo spam.</p>
-            <form>
-              <div class="form-group label-floating mt-2 mb-1 is-empty">
-                <div class="input-group z-input-subscribe">
-                  <label class="control-label" for="z-subscribe">
-                    <i class="fad fa-envelope"></i>Inserisci la tua email
-                  </label>
-                  <input type="email" id="z-subscribe" class="form-control">
-                </div>
-                <span class="zncn-input"></span>
+
+      </div>
+      <div class="col-md-4 col-sm-7 footer-col " style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
+          <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
+            ci piace lo spam.</p>
+          <form>
+            <div class="form-group label-floating mt-2 mb-1 is-empty">
+              <div class="input-group z-input-subscribe">
+                <label class="control-label" for="z-subscribe">
+                  <i class="fad fa-envelope"></i>Inserisci la tua email
+                </label>
+                <input type="email" id="z-subscribe" class="form-control">
               </div>
-              <button class="btn-subs" type="button">Sottoscrivi</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Contattaci
-            </h3>
-            <address class="no-mb">
-              <p>
-                <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
-              <p>
-                <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
-              </p>
-              <p>
-                <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
-              </p>
-              <p>
-                <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
-              </p>
-              <p>
-                <i class="fas fa-fax color-cdv"></i> +39 0575 649719
-              </p>
-
-            </address>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </aside>
-
-  <div class="footer-social">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 footer-col text-center ">
-          <div class="z-footbar-block">
-            <h3>Social</h3>
-            <div>
-              <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-
-              <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-
-              <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
-                target="_blank" class="btn-circle  btn-linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              </a>
+              <span class="zncn-input"></span>
             </div>
+            <button class="btn-subs" type="button">Sottoscrivi</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Contattaci
+          </h3>
+          <address class="no-mb">
+            <p>
+              <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
+            <p>
+              <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+            </p>
+            <p>
+              <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
+            </p>
+            <p>
+              <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
+            </p>
+            <p>
+              <i class="fas fa-fax color-cdv"></i> +39 0575 649719
+            </p>
+
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</aside>
+
+<div class="footer-social">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 footer-col text-center ">
+        <div class="z-footbar-block">
+          <h3>Social</h3>
+          <div>
+            <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
+              class="btn-circle  btn-facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
+              class="btn-circle  btn-instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
+              target="_blank" class="btn-circle  btn-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
-    </div>
-  </footer>
-
+<footer class="footer">
+  <div class="container">
+    <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
   </div>
-  <!-- sb-site-container -->
+</footer>
 
-  <!-- MENU MOBILE -->
-  <div class="z-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
+<div class="btn-back-top back-show">
+  <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-raised btn-circle-cdv   ">
+    <i class="fas fa-chevron-up"></i>
+    <div class="ripple-container"></div>
+  </a>
+</div>
 
-    <div class="hero-bg-cdv-profile hero-img-profile pt-6  pb-6">
-      <h3 class="index-1 text-center color-white">Centro Diagnostico <strong>Valdichiana</strong>
-      </h3>
+</div>
+<!-- sb-site-container -->
+
+<!-- MENU MOBILE -->
+<div class="z-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
+
+  <div class="hero-bg-cdv-profile hero-img-profile pt-6  pb-6">
+    <h3 class="index-1 text-center color-white">Centro Diagnostico <strong>Valdichiana</strong>
+    </h3>
+  </div>
+  <header class="z-slidebar-header">
+
+    <div class="z-slidebar-login">
+      <a href="javascript:void(0)" class="withripple">
+        <i class="fas fa-user"></i> Login</a>
+      <a href="javascript:void(0)" class="withripple">
+        <i class="fas fa-user-plus"></i> Registrati</a>
     </div>
-    <header class="z-slidebar-header">
-      
-      <div class="z-slidebar-login">
-        <a href="javascript:void(0)" class="withripple">
-          <i class="fas fa-user"></i> Login</a>
-        <a href="javascript:void(0)" class="withripple">
-          <i class="fas fa-user-plus"></i> Registrati</a>
-      </div>
-      <div class="z-slidebar-title">
-        <form class="search-form">
-          <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
-          <label for="search-box-slidebar">
-            <i class="fad fa-search"></i>
-          </label>
-        </form>
+    <div class="z-slidebar-title">
+      <form class="search-form">
+        <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
+        <label for="search-box-slidebar">
+          <i class="fad fa-search"></i>
+        </label>
+      </form>
 
 
-        <div class="z-slidebar-t">
-         
-        </div>
-      </div>
-    </header>
-    <ul class="z-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-      <li class="panel" role="tab" id="sch1">
-        <a class="link" href="#index">
-          Home </a>
-
-      </li>
-      <li class="panel" role="tab" id="sch2">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
-          aria-expanded="false" aria-controls="sc2">
-          Prestazioni </a>
-        <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
-          <li>
-            <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
-          </li>
-
-          <li>
-            <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
-          </li>
-
-          <li>
-            <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
-          </li>
-          <li>
-            <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
-          </li>
-
-        </ul>
-      </li>
-      <li class="panel" role="tab" id="sch4">
-        <a class="link" href="professionist.html">
-          Professionisti </a>
-
-      </li>
-      <li class="panel" role="tab" id="sch5">
-        <a class="link" href="contatti.html">
-          Contatti </a>
-
-      </li>
-    </ul>
-    <hr>
-    <div class="cdv-social z-slidebar-block">
-      <h4 class="z-slidebar-block-title">Social</h4>
-      <div class="cdv-social">
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
-          <i class="fab fa-facebook-f"></i>
-          <div class="ripple-container"></div>
-        </a>
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
-          <i class="fab fa-linkedin"></i>
-          <div class="ripple-container"></div>
-        </a>
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
-          <i class="fab fa-instagram"></i>
-          <div class="ripple-container"></div>
-        </a>
+      <div class="z-slidebar-t">
 
       </div>
     </div>
-  </div>>
+  </header>
+  <ul class="z-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+    <li class="panel" role="tab" id="sch1">
+      <a class="link" href="#index">
+        Home </a>
 
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    </li>
+    <li class="panel" role="tab" id="sch2">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
+        aria-expanded="false" aria-controls="sc2">
+        Prestazioni </a>
+      <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
+        <li>
+          <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
+        </li>
 
-  <script src="assets/js/plugins.min.js"></script>
-  <script src="assets/js/app.min.js"></script>
+        <li>
+          <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
+        </li>
+
+        <li>
+          <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
+        </li>
+        <li>
+          <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
+        </li>
+
+      </ul>
+    </li>
+    <li class="panel" role="tab" id="sch4">
+      <a class="link" href="professionist.html">
+        Professionisti </a>
+
+    </li>
+    <li class="panel" role="tab" id="sch5">
+      <a class="link" href="contatti.html">
+        Contatti </a>
+
+    </li>
+  </ul>
+  <hr>
+  <div class="cdv-social z-slidebar-block">
+    <h4 class="z-slidebar-block-title">Social</h4>
+    <div class="cdv-social">
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+        <i class="fab fa-facebook-f"></i>
+        <div class="ripple-container"></div>
+      </a>
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
+        <i class="fab fa-linkedin"></i>
+        <div class="ripple-container"></div>
+      </a>
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+        <i class="fab fa-instagram"></i>
+        <div class="ripple-container"></div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 
 
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/call-to-action.js"></script>
+
+<!-- owl-carousel -->
+<script src="assets/owl/js/jquery-1.9.1.min.js"></script>
+<script src="assets/owl/owl-carousel/owl.carousel.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#owl-cdv").owlCarousel({
+      autoPlay: 3000,
+      items: 2,
+      navigation: false,
+      navigationText: ['', ''],
+      itemsDesktop: [1140, 2],
+      itemsDesktopSmall: [979, 2]
+    });
+  });
+</script>
 
 </body>
 

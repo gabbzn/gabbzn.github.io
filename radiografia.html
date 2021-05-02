@@ -33,42 +33,46 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="assets/css/news.css">
-  <link rel="stylesheet" href="assets/css/azienda.css">
   <link rel="stylesheet" href="assets/css/sidebar.css">
-  <link rel="stylesheet" href="assets/css/carousel.css">
 
   <link rel="stylesheet" href="assets/css/responsivo.css">
-  <link rel="stylesheet" href="assets/css/call-to-action.css">
   <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
 
-
-  
-  <div class="wrapper">
-    <div id="main-div">
-      <div id="main-button" class="wave  btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
-        <i class="fal fa-comment-medical "></i>
-      </div>
-      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
-      <a href="mailto:someone@microsoft.com?subject=Hello%20again" class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
-      <a href="#" class="whatsapp-color btn-circle btn-circle-raised btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" class="messenger-color btn-circle btn-circle-raised btn-messenger"><i class="fab fa-facebook-messenger"></i></a>
-      <a href="#" class="instagram-color btn-circle btn-circle-raised btn-instagram"><i class="fab fa-instagram"></i></a>
-
-    </div>
-  </div>
-
-  <div id="z-preload" class="z-preload" style="display: none;">
+  <div id="ms-preload" class="ms-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
         <div class="dot2"></div>
       </div>
+    </div>
+  </div>
+  <!-- Call to Action -->
+  <div class="wrapper">
+    <div id="main-div">
+      <div id="main-button" class="wave btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
+        <i class="fal fa-comment-medical "></i>
+        <div class="ripple-container"></div>
+      </div>
+      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
+
+      <a href="mailto:someone@microsoft.com?subject=Hello%20again"
+        class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
+
+      <a href="https://wa.me/393457689551" class="whatsapp-color btn-circle btn-circle-raised  btn-whatsapp"><i
+          class="fab fa-whatsapp"></i></a>
+
+      <a href="https://www.messenger.com/t/centrodiagnosticovaldichiana"
+        class="messenger-color btn-circle btn-circle-raised btn-messenger "><i
+          class="fab fa-facebook-messenger"></i></a>
+
+
+
     </div>
   </div>
 
@@ -95,10 +99,9 @@
 
             <div class="modal-header-tabs">
               <!--  títulos login -->
-              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
-                    aria-expanded="true">
+                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple">
                     <i class="fas fa-user"></i> Login</a>
                 </li>
 
@@ -249,7 +252,7 @@
       </div>
     </div>
 
-    <header class="z-header z-header-cdv">
+    <header class="z-header z-header-cdv hide-mobile">
       <div class="container container-full">
         <div class="z-title">
           <a href="index.html">
@@ -261,8 +264,8 @@
           </a>
         </div>
         <div class="header-right">
-          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
-            data-toggle="modal" data-target="#z-account-modal">
+          <a href="" class="btn-circle animated zoomInDown animation-delay-8" data-toggle="modal"
+            data-target="#z-account-modal">
             <i class="fad fa-user"></i>
             <div class="ripple-container"></div>
           </a>
@@ -273,8 +276,7 @@
             </label>
           </form>
 
-          <a href="javascript:void(0)"
-            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
+          <a href="" class="btn-circle sb-toggle-left animated zoomInDown animation-delay-10">
             <i class="fad fa-bars"></i>
             <div class="ripple-container"></div>
           </a>
@@ -282,7 +284,7 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-cdv">
       <div class="container container-full">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
@@ -315,8 +317,7 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
-                              Radiografia</a>
+                            <a href="radiografia.html"><i class="fad fa-caret-right"></i> Radiografia</a>
                           </li>
                           <li>
                             <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
@@ -343,16 +344,14 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
-                              anestesiologia</a>
+                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i> anestesiologia</a>
                           </li>
                           <li>
                             <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
                               broncopneumologia</a>
                           </li>
                           <li>
-                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
-                              cardiologia</a>
+                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i> cardiologia</a>
                           </li>
                           <li>
                             <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
@@ -371,12 +370,10 @@
                               vascolare</a>
                           </li>
                           <li>
-                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
-                              dermatologia</a>
+                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i> dermatologia</a>
                           </li>
                           <li>
-                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
-                              endocrinologia</a>
+                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i> endocrinologia</a>
                           </li>
                           <li>
                             <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
@@ -386,13 +383,11 @@
                               gastroenterologia</a>
                           </li>
                           <li>
-                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
-                              ginecologia</a>
+                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i> ginecologia</a>
                           </li>
 
                           <li>
-                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
-                              legale</a>
+                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina legale</a>
                           </li>
                           <li>
                             <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
@@ -403,8 +398,8 @@
                               lavoro</a>
                           </li>
                           <li>
-                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
-                              dello sport</a>
+                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina dello
+                              sport</a>
                           </li>
                           <li>
                             <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
@@ -458,12 +453,10 @@
                             <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
                           </li>
                           <li>
-                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
-                              psichiatria</a>
+                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i> psichiatria</a>
                           </li>
                           <li>
-                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
-                              psicologia</a>
+                            <a href="psicologia.html"><i class="fad fa-caret-right"></i> psicologia</a>
                           </li>
                         </ul>
                       </div>
@@ -472,8 +465,7 @@
                       <div class="megamenu-block animated fadeInRight animated-2x">
                         <ul class="megamenu-block-list mt-6">
                           <li>
-                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
-                              reumatologia</a>
+                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i> reumatologia</a>
                           </li>
                           <li>
                             <a href="urologia.html">
@@ -488,8 +480,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -501,8 +492,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -534,306 +524,321 @@
     </nav>
 
 
-    <!--  inicio conteúdo -->
 
     <!--  Introdução -->
 
-
-    <div class="znc-background"></div>
+    <div class="znc-background hide-mobile"></div>
     <div class="container container-full  ">
-<section class="esami bg-mobile esami-2">
-  <div class="row">
-    <div class="col-md-12 ">
-              <h2 class="right-line hide-mobile">Radiografia</h2>
-<h2 class="right-line titolo-mobile-2 hide-desktop">Radiografia</h2>
-                  <div class="row">
-                    <div class="col-md-6 animated fadeInLeftTiny animation-delay-5">             
+      <section class="sub-prestazioni bg-mobile sub-prestazioni-2">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h2 class="right-line hide-mobile">Radiografia</h2>
+            <h2 class="right-line titolo-mobile-2 hide-desktop">Radiografia</h2>
+            <div class="row">
+              <div class="col-md-6 animated fadeInLeftTiny animation-delay-5">
 
-                        <p>La <strong>Radiografia</strong> è una tecnica di indagine diagnostica che sfrutta la proprietà dei
-                          <strong>raggi X</strong> (radiazioni elettromagnetiche ionizzanti) di attraversare i corpi.
-                          Attraversando i diversi tessuti del nostro organismo, sono pertanto in grado di imprimere su di un
-                          detettore (una pellicola “simil-fotografica” nel caso della <strong>Radiografia analogica</strong>,
-                          ovvero un supporto digitale nel caso della <strong>Radiografia digitale</strong>) un’immagine
-                          risultante, sintetica e bidimensionale, derivante dalla diversa densità (“compattezza, durezza”) delle
-                          strutture attraversate. Così strutture più compatte come le ossa appaiono più chiare (bianche) perché
-                          assorbono più raggi, impedendogli di raggiungere il detettore sottostante ove arrivano quindi in minor
-                          quantità, mentre i tessuti “molli” (come la cute, i muscoli o gli organi viscerali), a densità variabile
-                          ma inferiore a quella dell’osso, appaiono come varie sfumature di grigio perché permettono un maggiore
-                          passaggio dei raggi, proporzionale alla loro compattezza. La conseguenza quindi è che le strutture che
-                          hanno una elevata compattezza, come le ossa,</p>
+                <p class="capitular">La <strong>Radiografia</strong> è una tecnica di indagine diagnostica che sfrutta la proprietà dei
+                  <strong>raggi X</strong> (radiazioni elettromagnetiche ionizzanti) di attraversare i corpi.
+                  Attraversando i diversi tessuti del nostro organismo, sono pertanto in grado di imprimere su di un
+                  detettore (una pellicola “simil-fotografica” nel caso della <strong>Radiografia analogica</strong>,
+                  ovvero un supporto digitale nel caso della <strong>Radiografia digitale</strong>) un’immagine
+                  risultante, sintetica e bidimensionale, derivante dalla diversa densità (“compattezza, durezza”) delle
+                  strutture attraversate. Così strutture più compatte come le ossa appaiono più chiare (bianche) perché
+                  assorbono più raggi, impedendogli di raggiungere il detettore sottostante ove arrivano quindi in minor
+                  quantità, mentre i tessuti “molli” (come la cute, i muscoli o gli organi viscerali), a densità
+                  variabile
+                  ma inferiore a quella dell’osso, appaiono come varie sfumature di grigio perché permettono un maggiore
+                  passaggio dei raggi, proporzionale alla loro compattezza. La conseguenza quindi è che le strutture che
+                  hanno una elevata compattezza, come le ossa,
+                </p>
 
-                      </div>
-                    
-                    <div class="col-md-6 animated fadeInRightTiny animation-delay-7">
-                      
-                        <p>
-                          sono ben studiabili mediante i raggi X, permettendo di
-                          ottenere immagini ben nitide e ad alto contrasto, mentre tessuti molli non hanno con questa tecnica la
-                          loro migliore rappresentazione.</p>
-          
-                        <p><strong class="color-cdv">La Radiografia è una procedura del tutto INDOLORE. </strong></p>
-                        <div class="withripple zoom-img ">                  
-                          <img src="https://centrodiagnosticovaldichiana.it/wp-content/uploads/2018/12/RX-01.jpg" alt="Radiografia" class="img-responsive">
-                        
-                      </div>
-                    </div>
-                    </div>
+              </div>
 
-                    <div class="row">
-                        <hr>
-                    <div class="col-md-6 animated fadeInLeftTiny animation-delay-5">
- 
-              <h3>A cosa serve</h3>
-              <ul class="list-group">
-                <p>È metodica di rapida e semplice esecuzione, spesso impiegata come prima indagine da effettuare anche
-                  in regime d’urgenza per diagnosticare molte patologie:</p>
-                <li class="list-group-item"><i class="fad fa-minus"></i>  
-                   a carico dell’apparato osteoarticolare: lesioni
-                  post-traumatiche (fratture,…), affezioni infiammatorie acute (artriti) o degenerative croniche
-                  (artrosi), lesioni focali (neoplasie benigne o maligne).
+              <div class="col-md-6 animated fadeInRightTiny animation-delay-7">
+
+                <p>
+                  sono ben studiabili mediante i raggi X, permettendo di
+                  ottenere immagini ben nitide e ad alto contrasto, mentre tessuti molli non hanno con questa tecnica la
+                  loro migliore rappresentazione.</p>
+
+                <p><strong class="color-cdv">La Radiografia è una procedura del tutto INDOLORE. </strong></p>
+                <div class="withripple zoom-img ">
+                  <img src="https://centrodiagnosticovaldichiana.it/wp-content/uploads/2018/12/RX-01.jpg"
+                    alt="Radiografia" class="img-responsive">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <hr>
+              <div class="col-md-6 animated fadeInLeftTiny animation-delay-5">
+
+                <h3>A cosa serve</h3>
+                <ul class="list-group">
+                  <p>È metodica di rapida e semplice esecuzione, spesso impiegata come prima indagine da effettuare
+                    anche
+                    in regime d’urgenza per diagnosticare molte patologie:</p>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>
+                    a carico dell’apparato osteoarticolare: lesioni
+                    post-traumatiche (fratture,…), affezioni infiammatorie acute (artriti) o degenerative croniche
+                    (artrosi), lesioni focali (neoplasie benigne o maligne).
+                  </li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>
+
+                    carico dell’apparato respiratorio (torace): patologie infiammatorie (broncopolmoniti, pleuriti,…) o
+                    lesioni polmonari (neoplastiche, clinicamente silenti).
+                  </li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>
+                    a carico dell’apparato urinario o dell’addome: calcolosi
+                    renale, alterazioni della canalizzazione intestinale (occlusioni), perforazioni o importanti stati
+                    infiammatori acuti o cronici.
+                  </li>
+
+                </ul>
+
+
+              </div>
+              <div class="col-md-6 fadeInRightTiny animation-delay-5 ">
+                <h3>Esami eseguiti
+                </h3>
+                <!-- Listas  -->
+                <div class="mh-290">
+
+                  <div class="card-block">
+
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) cranio</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) cranio per seni
+                        paranasali</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) ossa nasali</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & articolazione
+                        temporo-mandibolare (atm) dx e sx a
+                        bocca aperta e chiusa</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) colonna cervicale</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) colonna dorsale</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) colonna lombare</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) osso sacro coccige</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) colonna completa per
+                        scoliosi</li>
+
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) arti inferiori e bacino
+                        sotto carico</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) bacino e anca</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & femore</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) ginocchio</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & gamba</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) piede e caviglia</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) assiale di rotula</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) torace</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & coste</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & sterno</li>
+
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & clavicola</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & spallas</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & braccio</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) & gomito</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) avambraccio</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) polso</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) mano</li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) polso e mano per studio
+                        dell'eta ossea<a name="informazioni"></a></li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) diretta addome </li>
+                      <li class="list-group-item"><i class="fad fa-minus"></i> radiografia (RX) diretta apparato
+                        urinario</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <hr>
+              <div class="col-md-6 animated fadeInRightTiny animation-delay-7 hide-mobile">
+                <div class="withripple zoom-img">
+                  <img src="assets/img/prest/intern/esami/esami-page/page/radiografia.png" alt="Radiografia"
+                    class="img-responsive">
+                </div>
+              </div>
+              <div class="col-md-6 animated fadeInLeft animation-delay-7 consigli">
+                <div class="bg"></div>
+
+                <h5>Consigliata per:
+                </h5>
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Apparato scheletrico</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Fratture ossee</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Lussazioni</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Artrosi</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Post operatoria</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Colonna vertebrale</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Spondilolistesi</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Spondiloartrosi</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i> Scoliosi</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="row hide-mobile pb-6">
+              <hr>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <br>
+    <!-- container -->
+    <aside class="z-footbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col" style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Mappa del sito
+              </h3>
+              <ul class="list-unstyled z-icon-list three_cols">
+                <li>
+                  <a href="index.html">
+                    Home</a>
                 </li>
-                <li class="list-group-item"><i class="fad fa-minus"></i>  
-                   
-                  carico dell’apparato respiratorio (torace): patologie infiammatorie (broncopolmoniti, pleuriti,…) o
-                  lesioni polmonari (neoplastiche, clinicamente silenti).
+                <li>
+                  <a href="prestazioni.html">
+                    Prestazioni</a>
                 </li>
-                <li class="list-group-item"><i class="fad fa-minus"></i>  
-                   a carico dell’apparato urinario o dell’addome: calcolosi
-                  renale, alterazioni della canalizzazione intestinale (occlusioni), perforazioni o importanti stati
-                  infiammatori acuti o cronici.
+                <li>
+                  <a href="professionist.html"> Profissionisti</a>
+                </li>
+                <li>
+                  <a href="contatti.html">
+                    Contatti</a>
+                </li>
+                <li>
+                  <a href="azienda.html">
+                    Chi Siamo</a>
+                </li>
+                <li>
+                  <a href="faq.html">
+                    Come fare per</a>
+                </li>
+                <li>
+                  <a href="codice.html">
+                    Codice Etico</a>
+                </li>
+                <li>
+                  <a href="professionist.html">
+                    Specialistiche</a>
+                </li>
+                <li>
+                  <a href="esami.html">
+                    Esami</a>
+                </li>
+                <li>
+                  <a href="ambulatorio.html">
+                    Amb. Infermieristico</a>
+                </li>
+                <li>
+                  <a href="punto.html">
+                    Punto Prelievi</a>
                 </li>
 
               </ul>
-         
-              
-                  </div>
-                  <div class="col-md-6 fadeInRightTiny animation-delay-5 ">
-                    <h3>Esami eseguiti
-                    </h3>
-                    <!-- Listas  -->
-                    <div class="mh-290">
-                    
-                     <div class="card-block">
-                         
-                                    <ul class="list-group">
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) cranio</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) cranio per seni paranasali</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) ossa nasali</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & articolazione temporo-mandibolare (atm) dx e sx a
-                                        bocca aperta e chiusa</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) colonna cervicale</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) colonna dorsale</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) colonna lombare</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) osso sacro coccige</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) colonna completa per scoliosi</li>
-                                    
-                                  <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) arti inferiori e bacino sotto carico</li>
-                                  <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) bacino e anca</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & femore</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) ginocchio</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & gamba</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) piede e caviglia</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) assiale di rotula</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) torace</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & coste</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & sterno</li>
-                            
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & clavicola</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & spallas</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & braccio</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) & gomito</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) avambraccio</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) polso</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) mano</li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) polso e mano per studio dell'eta ossea<a
-                                          name="informazioni"></a></li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) diretta addome </li>
-                                      <li class="list-group-item"><i class="fad fa-minus"></i>  radiografia (RX) diretta apparato urinario</li>
-                                     </ul>
-                             </div>
-                         </div>
-                     </div>
-
-                 </div>
-  
-
-                  <div class="row">               
-                      <hr>
-                      <div class="col-md-6 animated fadeInRightTiny animation-delay-7 hide-mobile">
-                        <div class="withripple zoom-img">                   
-                            <img src="assets/img/prest/intern/esami/esami-page/page/radiografia.png" alt="Radiografia" class="img-responsive">
-</div>
-                      </div>
-                      <div class="col-md-6 animated fadeInLeft animation-delay-7 consigli">
-                        <div class="bg"></div>
-                        
-                        <h5>Consigliata per:
-                        </h5>
-                      <ul class="list-group">                 
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Apparato scheletrico</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Fratture ossee</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Lussazioni</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Artrosi</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Post operatoria</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Colonna vertebrale</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Spondilolistesi</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Spondiloartrosi</li>
-                        <li class="list-group-item"><i class="fad fa-minus"></i>  Scoliosi</li>
-                      </ul>
-                   
-                  </div>
-
-                  </div>
-
-                  <div class="row hide-mobile pb-6">
-                    <hr>
-                  </div>
-                  </div>
-                </section>
-              </div>
             </div>
-            <br>
-  <!-- container -->
-  <aside class="z-footbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Mappa del sito
-            </h3>
-            <ul class="list-unstyled z-icon-list three_cols">
-              <li>
-                <a href="index.html">
-                  Home</a>
-              </li>
-              <li>
-                <a href="prestazioni.html">
-                  Prestazioni</a>
-              </li>
-              <li>
-                <a href="professionist.html"> Profissionisti</a>
-              </li>
-              <li>
-                <a href="contatti.html">
-                  Contatti</a>
-              </li>
-              <li>
-                <a href="azienda.html">
-                  Chi Siamo</a>
-              </li>
-              <li>
-                <a href="faq.html">
-                  Come fare per</a>
-              </li>
-              <li>
-                <a href="codice.html">
-                  Codice Etico</a>
-              </li>
-              <li>
-                <a href="professionist.html">
-                  Specialistiche</a>
-              </li>
-              <li>
-                <a href="esami.html">
-                  Esami</a>
-              </li>
-              <li>
-                <a href="ambulatorio.html">
-                  Amb. Infermieristico</a>
-              </li>
-              <li>
-                <a href="punto.html">
-                  Punto Prelievi</a>
-              </li>
 
-            </ul>
           </div>
-
-        </div>
-        <div class="col-md-4 col-sm-7 footer-col " style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
-            <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
-              ci piace lo spam.</p>
-            <form>
-              <div class="form-group label-floating mt-2 mb-1 is-empty">
-                <div class="input-group z-input-subscribe">
-                  <label class="control-label" for="z-subscribe">
-                    <i class="fad fa-envelope"></i>Inserisci la tua email
-                  </label>
-                  <input type="email" id="z-subscribe" class="form-control">
+          <div class="col-md-4 col-sm-7 footer-col " style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
+              <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
+                ci piace lo spam.</p>
+              <form>
+                <div class="form-group label-floating mt-2 mb-1 is-empty">
+                  <div class="input-group z-input-subscribe">
+                    <label class="control-label" for="z-subscribe">
+                      <i class="fad fa-envelope"></i>Inserisci la tua email
+                    </label>
+                    <input type="email" id="z-subscribe" class="form-control">
+                  </div>
+                  <span class="zncn-input"></span>
                 </div>
-                <span class="zncn-input"></span>
-              </div>
-              <button class="btn-subs" type="button">Sottoscrivi</button>
-            </form>
+                <button class="btn-subs" type="button">Sottoscrivi</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Contattaci
+              </h3>
+              <address class="no-mb">
+                <p>
+                  <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
+                <p>
+                  <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+                </p>
+                <p>
+                  <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
+                </p>
+                <p>
+                  <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
+                </p>
+                <p>
+                  <i class="fas fa-fax color-cdv"></i> +39 0575 649719
+                </p>
+
+              </address>
+            </div>
+
           </div>
         </div>
-        <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Contattaci
-            </h3>
-            <address class="no-mb">
-              <p>
-                <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
-              <p>
-                <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
-              </p>
-              <p>
-                <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
-              </p>
-              <p>
-                <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
-              </p>
-              <p>
-                <i class="fas fa-fax color-cdv"></i> +39 0575 649719
-              </p>
 
-            </address>
-          </div>
-
-        </div>
       </div>
 
-    </div>
+    </aside>
 
-  </aside>
+    <div class="footer-social">
+      <div class="container">
+        <div class="row">
 
-  <div class="footer-social">
-    <div class="container">
-      <div class="row">
+          <div class="col-md-12 footer-col text-center ">
+            <div class="z-footbar-block">
+              <h3>Social</h3>
+              <div>
+                <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
+                  class="btn-circle  btn-facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
 
-        <div class="col-md-12 footer-col text-center ">
-          <div class="z-footbar-block">
-            <h3>Social</h3>
-            <div>
-              <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
+                <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
+                  class="btn-circle  btn-instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
 
-              <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-
-              <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
-                target="_blank" class="btn-circle  btn-linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              </a>
+                <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
+                  target="_blank" class="btn-circle  btn-linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <div class="btn-back-top back-show">
+      <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-raised btn-circle-cdv   ">
+        <i class="fas fa-chevron-up"></i>
+        <div class="ripple-container"></div>
+      </a>
     </div>
-  </footer>
 
   </div>
   <!-- sb-site-container -->
@@ -928,11 +933,11 @@
   </div>
 
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script src="assets/js/call-to-action.js"></script>
+
+
   <script src="assets/js/plugins.min.js"></script>
   <script src="assets/js/app.min.js"></script>
-
-
+  <script src="assets/js/call-to-action.js"></script>
 
 </body>
 

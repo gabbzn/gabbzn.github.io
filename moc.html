@@ -1,5 +1,4 @@
 <html lang="en" class="sb-init sb-active sb-active-left">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,37 +31,19 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="assets/css/news.css">
-  <link rel="stylesheet" href="assets/css/azienda.css">
-  <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
   
-  <link rel="stylesheet" href="assets/css/esami.css">
-  <link rel="stylesheet" href="assets/css/call-to-action.css">
-  <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
-</head>
+  <link rel="stylesheet" href="assets/css/responsivo.css">
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
-
-
   
-  <div class="wrapper">
-    <div id="main-div">
-      <div id="main-button" class="wave open btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
-        <i class="fal fa-comment-medical fa-times"></i>
-      </div>
-      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
-      <a href="mailto:someone@microsoft.com?subject=Hello%20again" class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
-      <a href="#" class="whatsapp-color btn-circle btn-circle-raised btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" class="messenger-color btn-circle btn-circle-raised btn-messenger"><i class="fab fa-facebook-messenger"></i></a>
-      <a href="#" class="instagram-color btn-circle btn-circle-raised btn-instagram"><i class="fab fa-instagram"></i></a>
-
-    </div>
-  </div>
-
-  <div id="z-preload" class="z-preload" style="display: none;">
+  <div id="ms-preload" class="ms-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
@@ -70,477 +51,647 @@
       </div>
     </div>
   </div>
+<!-- Call to Action -->
+  <div class="wrapper">
+    <div id="main-div">
+      <div id="main-button" class="wave btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
+        <i class="fal fa-comment-medical "></i>
+      <div class="ripple-container"></div></div>
+      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
+    
+      <a href="mailto:someone@microsoft.com?subject=Hello%20again" class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
+    
+      <a href="https://wa.me/393457689551" class="whatsapp-color btn-circle btn-circle-raised  btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+     
+      <a href="https://www.messenger.com/t/centrodiagnosticovaldichiana" class="messenger-color btn-circle btn-circle-raised btn-messenger "><i class="fab fa-facebook-messenger"></i></a>
+    
+     
 
-  <div class="sb-site-container">
+    </div>
+  </div>
 
-    <!-- Modal -->
-    <div class="modal modal-cdv in" id="z-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog animated zoomIn animated-3x" role="document">
-        <div class="modal-content">
-          <div class="modal-header shadow-2dp no-pb">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <i class="fas fa-times"></i>
-              </span>
-            </button>
+  <div class="sb-site-container ">
 
-            <div class="modal-title text-center">
-              <img src="assets/img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 z-logo" />
-              <h3 class="no-m z-site-title">
-                Centro Diagnostico
-                <strong>Valdichiana</strong>
-              </h3>
-            </div>
+<!-- Modal -->
+<div
+  class="modal modal-cdv in"
+  id="z-account-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+>
+  <div class="modal-dialog animated zoomIn animated-3x" role="document">
+    <div class="modal-content">
+      <div class="modal-header shadow-2dp no-pb">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
 
-            <div class="modal-header-tabs">
-              <!--  títulos login -->
-              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
-                <li role="presentation" class="active">
-                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
-                    aria-expanded="true">
-                    <i class="fas fa-user"></i> Login</a>
-                </li>
+        <div class="modal-title text-center">
+          <img
+            src="assets/img/navbar-brand.png"
+            alt=""
+            class="animated zoomInDown animation-delay-5 z-logo"
+          />
+          <h3 class="no-m z-site-title">
+            Centro Diagnostico
+            <strong>Valdichiana</strong>
+          </h3>
+        </div>
 
-                <li role="presentation" class="">
-                  <a href="#z-register-tab" aria-controls="z-register-tab" role="tab" data-toggle="tab"
-                    class="withoutripple" aria-expanded="false">
-                    <i class="fas fa-user-plus"></i> Registrati</a>
-                </li>
+        <div class="modal-header-tabs">
+          <!--  títulos login -->
+          <ul class="nav nav-tabs nav-tabs-full nav-tabs-3" role="tablist">
+            <li role="presentation" class="active">
+              <a
+                href="#z-login-tab"
+                aria-controls="z-login-tab"
+                role="tab"
+                data-toggle="tab"
+                class="withoutripple"
+              >
+                <i class="fas fa-user"></i> Login</a
+              >
+            </li>
 
-                <li role="presentation" class="">
-                  <a href="#z-recovery-tab" aria-controls="z-recovery-tab" role="tab" data-toggle="tab"
-                    class="withoutripple" aria-expanded="false">
-                    <i class="fas fa-key"></i>
-                    Recupera la pass</a>
-                </li>
+            <li role="presentation" class="">
+              <a
+                href="#z-register-tab"
+                aria-controls="z-register-tab"
+                role="tab"
+                data-toggle="tab"
+                class="withoutripple"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user-plus"></i> Registrati</a
+              >
+            </li>
 
-                <span id="i1"></span>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="tab-content">
-              <!-- login - registro - recuperar senha -->
+            <li role="presentation" class="">
+              <a
+                href="#z-recovery-tab"
+                aria-controls="z-recovery-tab"
+                role="tab"
+                data-toggle="tab"
+                class="withoutripple"
+                aria-expanded="false"
+              >
+                <i class="fas fa-key"></i>
+                Recupera la pass</a
+              >
+            </li>
 
-              <div role="tabpanel" class="tab-pane fade active in" id="z-login-tab">
-                <form autocomplete="off">
-                  <fieldset>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-user"></i>
-                        </span>
-                        <label class="control-label" for="z-form-user">Inserisci il tuo nome utente</label>
-                        <input type="text" id="z-form-user" class="form-control" />
+            <span id="i1"></span>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <!-- login - registro - recuperar senha -->
+
+          <div role="tabpanel" class="tab-pane fade active in" id="z-login-tab">
+            <form autocomplete="off">
+              <fieldset>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <label class="control-label" for="z-form-user"
+                      >Inserisci il tuo nome utente</label
+                    >
+                    <input type="text" id="z-form-user" class="form-control" />
+                  </div>
+                  <span class="material-input"></span>
+                </div>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <label class="control-label" for="z-form-pass"
+                      >Inserisci la password</label
+                    >
+                    <input
+                      type="password"
+                      id="z-form-pass"
+                      class="form-control"
+                    />
+                  </div>
+                  <span class="material-input"></span>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="form-group no-mt">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" /><span
+                            class="checkbox-material"
+                            ><span class="check"></span
+                          ></span>
+                          Ricordare la password
+                        </label>
                       </div>
-                      <span class="material-input"></span>
                     </div>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-lock"></i>
-                        </span>
-                        <label class="control-label" for="z-form-pass">Inserisci la password</label>
-                        <input type="password" id="z-form-pass" class="form-control" />
-                      </div>
-                      <span class="material-input"></span>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-md-6">
-                        <div class="form-group no-mt">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" /><span class="checkbox-material"><span
-                                  class="check"></span></span>
-                              Ricordare la password
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <button class="btn btn-raised btn-cdv pull-right">
-                          Accedi
-                        </button>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="z-register-tab">
-                <form>
-                  <fieldset>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-user-plus"></i>
-                        </span>
-                        <label class="control-label" for="z-form-user">Nome utente</label>
-                        <input type="text" id="z-form-user" class="form-control" />
-                      </div>
-                      <span class="material-input"></span>
-                    </div>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-envelope"></i>
-                        </span>
-                        <label class="control-label" for="z-form-email">Inserisci l'email</label>
-                        <input type="email" id="z-form-email" class="form-control" />
-                      </div>
-                      <span class="material-input"></span>
-                    </div>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-lock"></i>
-                        </span>
-                        <label class="control-label" for="z-form-pass">Inserisci la password</label>
-                        <input type="password" id="z-form-pass" class="form-control" />
-                      </div>
-                      <span class="material-input"></span>
-                    </div>
-                    <div class="form-group label-floating is-empty">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <i class="fas fa-lock"></i>
-                        </span>
-                        <label class="control-label" for="z-form-pass">Ripetere la password</label>
-                        <input type="password" id="z-form-pass" class="form-control" />
-                      </div>
-                      <span class="material-input"></span>
-                    </div>
-                    <button class="btn btn-raised btn-block btn-cdv">
-                      Registrati
+                  </div>
+                  <div class="col-md-6">
+                    <button class="btn btn-raised btn-cdv pull-right">
+                      Accedi
                     </button>
-                  </fieldset>
-                </form>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="z-recovery-tab">
-                <fieldset>
-                  <div class="form-group label-floating is-empty">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="fas fa-user"></i>
-                      </span>
-                      <label class="control-label" for="z-form-user">Nome utente</label>
-                      <input type="text" id="z-form-user" class="form-control" />
-                    </div>
-                    <span class="material-input"></span>
                   </div>
-                  <div class="form-group label-floating is-empty">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                      <label class="control-label" for="z-form-email">Email</label>
-                      <input type="email" id="z-form-email" class="form-control" />
-                    </div>
-                    <span class="material-input"></span>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="z-register-tab">
+            <form>
+              <fieldset>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-user-plus"></i>
+                    </span>
+                    <label class="control-label" for="z-form-user"
+                      >Nome utente</label
+                    >
+                    <input type="text" id="z-form-user" class="form-control" />
                   </div>
-                  <button class="btn btn-raised btn-block btn-cdv">
-                    Invia password
-                  </button>
-                </fieldset>
+                  <span class="material-input"></span>
+                </div>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <label class="control-label" for="z-form-email"
+                      >Inserisci l'email</label
+                    >
+                    <input
+                      type="email"
+                      id="z-form-email"
+                      class="form-control"
+                    />
+                  </div>
+                  <span class="material-input"></span>
+                </div>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <label class="control-label" for="z-form-pass"
+                      >Inserisci la password</label
+                    >
+                    <input
+                      type="password"
+                      id="z-form-pass"
+                      class="form-control"
+                    />
+                  </div>
+                  <span class="material-input"></span>
+                </div>
+                <div class="form-group label-floating is-empty">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <label class="control-label" for="z-form-pass"
+                      >Ripetere la password</label
+                    >
+                    <input
+                      type="password"
+                      id="z-form-pass"
+                      class="form-control"
+                    />
+                  </div>
+                  <span class="material-input"></span>
+                </div>
+                <button class="btn btn-raised btn-block btn-cdv">
+                  Registrati
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="z-recovery-tab">
+            <fieldset>
+              <div class="form-group label-floating is-empty">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <label class="control-label" for="z-form-user"
+                    >Nome utente</label
+                  >
+                  <input type="text" id="z-form-user" class="form-control" />
+                </div>
+                <span class="material-input"></span>
               </div>
-            </div>
+              <div class="form-group label-floating is-empty">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <label class="control-label" for="z-form-email">Email</label>
+                  <input type="email" id="z-form-email" class="form-control" />
+                </div>
+                <span class="material-input"></span>
+              </div>
+              <button class="btn btn-raised btn-block btn-cdv">
+                Invia password
+              </button>
+            </fieldset>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <header class="z-header z-header-cdv">
-      <div class="container container-full">
-        <div class="z-title">
-          <a href="index.html">
-            <img src="assets/img/navbar-brand.png" alt="" class="animated zoomInDown animation-delay-5 z-logo" />
-            <h1 class="animated fadeInRight animation-delay-6">
-              Centro Diagnostico
-              <span>Valdichiana</span>
-            </h1>
+<header class="z-header z-header-cdv hide-mobile">
+  <div class="container container-full">
+    <div class="z-title">
+      <a href="index.html">
+        <img
+          src="assets/img/navbar-brand.png"
+          alt=""
+          class="animated zoomInDown animation-delay-5 z-logo"
+        />
+        <h1 class="animated fadeInRight animation-delay-6">
+          Centro Diagnostico
+          <span>Valdichiana</span>
+        </h1>
+      </a>
+    </div>
+    <div class="header-right">
+      <a
+        href=""
+        class="btn-circle animated zoomInDown animation-delay-8"
+        data-toggle="modal"
+        data-target="#z-account-modal"
+      >
+        <i class="fad fa-user"></i>
+        <div class="ripple-container"></div>
+      </a>
+      <form class="search-form animated zoomInDown animation-delay-9">
+        <input
+          id="search-box"
+          type="text"
+          class="search-input"
+          placeholder="Ricerca..."
+          name="q"
+        />
+        <label for="search-box">
+          <i class="fad fa-search"></i>
+        </label>
+      </form>
+
+      <a
+        href=""
+        class="btn-circle sb-toggle-left animated zoomInDown animation-delay-10"
+      >
+        <i class="fad fa-bars"></i>
+        <div class="ripple-container"></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-cdv">
+  <div class="container container-full">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        <span class="ms-title"
+          >Centro Diagnostico
+          <strong>Valdichiana</strong>
+        </span>
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a
+            href="index.html"
+            class="animated fadeIn animation-delay-4"
+            data-name="home"
+            >Home
           </a>
-        </div>
-        <div class="header-right">
-          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
-            data-toggle="modal" data-target="#z-account-modal">
-            <i class="fad fa-user"></i>
+        </li>
+
+        <li class="dropdown yamm-fw" class="active">
+          <a
+            href="#"
+            class="dropdown-toggle animated fadeIn animation-delay-6"
+            data-toggle="dropdown"
+            data-hover="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-name="component"
+            >Prestazioni
+
             <div class="ripple-container"></div>
           </a>
-          <form class="search-form animated zoomInDown animation-delay-9">
-            <input id="search-box" type="text" class="search-input" placeholder="Ricerca..." name="q" />
-            <label for="search-box">
-              <i class="fad fa-search"></i>
-            </label>
-          </form>
-
-          <a href="javascript:void(0)"
-            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
-            <i class="fad fa-bars"></i>
-            <div class="ripple-container"></div>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
-      <div class="container container-full">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">
-            <span class="ms-title">Centro Diagnostico
-              <strong>Valdichiana</strong>
-            </span>
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul
+            class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x"
+          >
             <li>
-              <a href="index.html" class="animated fadeIn animation-delay-4" data-name="home">Home
-              </a>
-            </li>
-
-            <li class="dropdown yamm-fw" class="active">
-              <a href="#" class="dropdown-toggle animated fadeIn animation-delay-6" data-toggle="dropdown"
-                data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
-                data-name="component">Prestazioni
-
-                <div class="ripple-container"></div>
-              </a>
-              <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
-                <li>
-                  <div class="row">
-                    <div class="col-sm-3 megamenu-col">
-                      <div class="megamenu-block animated fadeInLeft animated-2x">
-                        <h3 class="megamenu-block-title">
-                          <i class="fas fa-diagnoses"></i> Esami Diagnostici
-                        </h3>
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
-                              Radiografia</a>
-                          </li>
-                          <li>
-                            <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
-                              Magnetica
-                            </a>
-                          </li>
-                          <li>
-                            <a href="cone-beam.html"><i class="fad fa-caret-right"></i> Cone Beam</a>
-                          </li>
-                          <li>
-                            <a href="moc.html"><i class="fad fa-caret-right"></i> Moc</a>
-                          </li>
-                          <li>
-                            <a href="ecografia.html"><i class="fad fa-caret-right"></i> Ecografia</a>
-                          </li>
-                          <li>
-                            <a href="tac.html"><i class="fad fa-caret-right"></i> TAC</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="megamenu-block animated fadeInLeft animated-2x">
-                        <h3 class="megamenu-block-title">
-                          <i class="fas fa-user-md"></i>Specialistiche
-                        </h3>
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
-                              anestesiologia</a>
-                          </li>
-                          <li>
-                            <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
-                              broncopneumologia</a>
-                          </li>
-                          <li>
-                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
-                              cardiologia</a>
-                          </li>
-                          <li>
-                            <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
-                              generale</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 megamenu-col">
-                      <div class="megamenu-block animated fadeInLeft animated-2x">
-                        <h3 class="megamenu-block-title mt-2"></h3>
-
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a href="chirurgiavascolare.html"><i class="fad fa-caret-right"></i> chirurgia
-                              vascolare</a>
-                          </li>
-                          <li>
-                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
-                              dermatologia</a>
-                          </li>
-                          <li>
-                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
-                              endocrinologia</a>
-                          </li>
-                          <li>
-                            <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
-                          </li>
-                          <li>
-                            <a href="gastroenterologia.html"><i class="fad fa-caret-right"></i>
-                              gastroenterologia</a>
-                          </li>
-                          <li>
-                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
-                              ginecologia</a>
-                          </li>
-
-                          <li>
-                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
-                              legale</a>
-                          </li>
-                          <li>
-                            <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
-                              chirurgia estetica</a>
-                          </li>
-                          <li>
-                            <a href="medicina-del-lavoro.htlm"><i class="fad fa-caret-right"></i> medicina del
-                              lavoro</a>
-                          </li>
-                          <li>
-                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
-                              dello sport</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
-                              nefrologia</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-3 megamenu-col">
-                      <div class="megamenu-block animated fadeInRight animated-2x">
-                        <h3 class="megamenu-block-title mt-2"></h3>
-
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a class="withripple" href="neurologia.html"><i class="fad fa-caret-right"></i>
-                              neurologia</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="neurochirugia.html"><i class="fad fa-caret-right"></i>
-                              neurochirugia</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="nutrizione.html"><i class="fad fa-caret-right"></i>
-                              nutrizione</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="oculistica.html"><i class="fad fa-caret-right"></i>
-                              oculistica</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="ortopedia-traumatologia.html"><i class="fad fa-caret-right"></i>
-                              ortopedia e
-                              traumatologia</a>
-                          </li>
-
-                          <li>
-                            <a class="withripple" href="nutrizione.html"><i class="fad fa-caret-right"></i>
-                              nutrizione</a>
-                          </li>
-                          <li>
-                            <a class="withripple" href="otorino.html"><i class="fad fa-caret-right"></i> otorino
-                              laringoiatria</a>
-                          </li>
-                          <li>
-                            <a href="ozonoterapia.html">
-                              <i class="fad fa-caret-right"></i>
-                              ozonoterapia</a>
-                          </li>
-                          <li>
-                            <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
-                          </li>
-                          <li>
-                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
-                              psichiatria</a>
-                          </li>
-                          <li>
-                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
-                              psicologia</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 megamenu-col">
-                      <div class="megamenu-block animated fadeInRight animated-2x">
-                        <ul class="megamenu-block-list mt-6">
-                          <li>
-                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
-                              reumatologia</a>
-                          </li>
-                          <li>
-                            <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> urologia</a>
-                          </li>
-                        </ul>
-
-                        <h3 class="megamenu-block-title">
-                          <i class="fas fa-user-nurse"></i> Ambulatorio
-                          Infermieristico
-                        </h3>
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="megamenu-block animated fadeInRight animated-2x">
-                        <h3 class="megamenu-block-title">
-                          <i class="fad fa-hospital-user"></i> Punto Prelievi
-                        </h3>
-                        <ul class="megamenu-block-list">
-                          <li>
-                            <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+              <div class="row">
+                <div class="col-sm-3 megamenu-col">
+                  <div class="megamenu-block animated fadeInLeft animated-2x">
+                    <h3 class="megamenu-block-title">
+                      <i class="fas fa-diagnoses"></i> Esami Diagnostici
+                    </h3>
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a href="radiografia.html"
+                          ><i class="fad fa-caret-right"></i> Radiografia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="risonanza.html"
+                          ><i class="fad fa-caret-right"></i> Risonanza
+                          Magnetica
+                        </a>
+                      </li>
+                      <li>
+                        <a href="cone-beam.html"
+                          ><i class="fad fa-caret-right"></i> Cone Beam</a
+                        >
+                      </li>
+                      <li>
+                        <a href="moc.html"
+                          ><i class="fad fa-caret-right"></i> Moc</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ecografia.html"
+                          ><i class="fad fa-caret-right"></i> Ecografia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tac.html"
+                          ><i class="fad fa-caret-right"></i> TAC</a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-            </li>
+                  <div class="megamenu-block animated fadeInLeft animated-2x">
+                    <h3 class="megamenu-block-title">
+                      <i class="fas fa-user-md"></i>Specialistiche
+                    </h3>
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a href="anestesiologia.html"
+                          ><i class="fad fa-caret-right"></i> anestesiologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="broncopneumologia.html"
+                          ><i class="fad fa-caret-right"></i>
+                          broncopneumologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="cardiologia.htlm"
+                          ><i class="fad fa-caret-right"></i> cardiologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="chirurgiagenerale.html"
+                          ><i class="fad fa-caret-right"></i> chirurgia
+                          generale</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 megamenu-col">
+                  <div class="megamenu-block animated fadeInLeft animated-2x">
+                    <h3 class="megamenu-block-title mt-2"></h3>
 
-            <li>
-              <a href="professionist.html" class="animated fadeIn animation-delay-7"
-                data-name="professionisti">Professionisti
-              </a>
-            </li>
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a href="chirurgiavascolare.html"
+                          ><i class="fad fa-caret-right"></i> chirurgia
+                          vascolare</a
+                        >
+                      </li>
+                      <li>
+                        <a href="dermatologia.html"
+                          ><i class="fad fa-caret-right"></i> dermatologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="endocrinologia.html"
+                          ><i class="fad fa-caret-right"></i> endocrinologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="fisiatria.html"
+                          ><i class="fad fa-caret-right"></i> fisiatria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="gastroenterologia.html"
+                          ><i class="fad fa-caret-right"></i>
+                          gastroenterologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ginecologia.html"
+                          ><i class="fad fa-caret-right"></i> ginecologia</a
+                        >
+                      </li>
 
-            <li>
-              <a href="contatti.html" class="animated fadeIn animation-delay-9" data-name="contatti">Contatti
-              </a>
+                      <li>
+                        <a href="medicina-legale.html"
+                          ><i class="fad fa-caret-right"></i> medicina legale</a
+                        >
+                      </li>
+                      <li>
+                        <a href="medicina-chirurgia-estetica.html"
+                          ><i class="fad fa-caret-right"></i> medicina e
+                          chirurgia estetica</a
+                        >
+                      </li>
+                      <li>
+                        <a href="medicina-del-lavoro.htlm"
+                          ><i class="fad fa-caret-right"></i> medicina del
+                          lavoro</a
+                        >
+                      </li>
+                      <li>
+                        <a href="medicina-dello-sport.html"
+                          ><i class="fad fa-caret-right"></i> medicina dello
+                          sport</a
+                        >
+                      </li>
+                      <li>
+                        <a class="withripple" href="nefrologia.html"
+                          ><i class="fad fa-caret-right"></i> nefrologia</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 megamenu-col">
+                  <div class="megamenu-block animated fadeInRight animated-2x">
+                    <h3 class="megamenu-block-title mt-2"></h3>
+
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a class="withripple" href="neurologia.html"
+                          ><i class="fad fa-caret-right"></i> neurologia</a
+                        >
+                      </li>
+                      <li>
+                        <a class="withripple" href="neurochirugia.html"
+                          ><i class="fad fa-caret-right"></i> neurochirugia</a
+                        >
+                      </li>
+                      <li>
+                        <a class="withripple" href="nutrizione.html"
+                          ><i class="fad fa-caret-right"></i> nutrizione</a
+                        >
+                      </li>
+                      <li>
+                        <a class="withripple" href="oculistica.html"
+                          ><i class="fad fa-caret-right"></i> oculistica</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="withripple"
+                          href="ortopedia-traumatologia.html"
+                          ><i class="fad fa-caret-right"></i> ortopedia e
+                          traumatologia</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="withripple" href="nutrizione.html"
+                          ><i class="fad fa-caret-right"></i> nutrizione</a
+                        >
+                      </li>
+                      <li>
+                        <a class="withripple" href="otorino.html"
+                          ><i class="fad fa-caret-right"></i> otorino
+                          laringoiatria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ozonoterapia.html">
+                          <i class="fad fa-caret-right"></i>
+                          ozonoterapia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="pediatria.htlm"
+                          ><i class="fad fa-caret-right"></i> pediatria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="psichiatria.html"
+                          ><i class="fad fa-caret-right"></i> psichiatria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="psicologia.html"
+                          ><i class="fad fa-caret-right"></i> psicologia</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 megamenu-col">
+                  <div class="megamenu-block animated fadeInRight animated-2x">
+                    <ul class="megamenu-block-list mt-6">
+                      <li>
+                        <a href="reumatologia.html"
+                          ><i class="fad fa-caret-right"></i> reumatologia</a
+                        >
+                      </li>
+                      <li>
+                        <a href="urologia.html">
+                          <i class="fad fa-caret-right"></i> urologia</a
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="megamenu-block-title">
+                      <i class="fas fa-user-nurse"></i> Ambulatorio
+                      Infermieristico
+                    </h3>
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a href="urologia.html">
+                          <i class="fad fa-caret-right"></i> Vai alla pagina</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="megamenu-block animated fadeInRight animated-2x">
+                    <h3 class="megamenu-block-title">
+                      <i class="fad fa-hospital-user"></i> Punto Prelievi
+                    </h3>
+                    <ul class="megamenu-block-list">
+                      <li>
+                        <a href="urologia.html">
+                          <i class="fad fa-caret-right"></i> Vai alla pagina</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
-        </div>
-        <!-- navbar-collapse collapse -->
-        <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
-          <i class="fad fa-bars"></i>
-          <div class="ripple-container"></div>
-        </a>
-      </div>
-      <!-- container -->
-    </nav>
+        </li>
+
+        <li>
+          <a
+            href="professionist.html"
+            class="animated fadeIn animation-delay-7"
+            data-name="professionisti"
+            >Professionisti
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="contatti.html"
+            class="animated fadeIn animation-delay-9"
+            data-name="contatti"
+            >Contatti
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- navbar-collapse collapse -->
+    <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
+      <i class="fad fa-bars"></i>
+      <div class="ripple-container"></div>
+    </a>
+  </div>
+  <!-- container -->
+</nav>
 
 
-    <!--  inicio conteúdo -->
-
-    <!--  Introdução -->
+  <!--  Introdução -->
 
 
-    <div class="znc-background"></div>
-    <div class="container container-full  ">
-<section class="esami bg-mobile esami-2">
+  <div class="znc-background"></div>
+  <div class="container">
+<section class="sub-prestazioni bg-mobile sub-prestazioni-2">
   <div class="row">
     <div class="col-md-12 ">
               <h2 class="right-line hide-mobile">MOC</h2>
@@ -600,9 +751,9 @@
                     </div>
                   </section>
                 </div>
-              </div>
+         
               <br>
-              
+         
   <!-- container -->
   <aside class="z-footbar">
     <div class="container">
@@ -745,7 +896,12 @@
     </div>
   </footer>
 
+  <div class="btn-back-top back-show">
+    <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-raised btn-circle-cdv   ">
+      <i class="fas fa-chevron-up"></i>
+    <div class="ripple-container"></div></a>
   </div>
+</
   <!-- sb-site-container -->
 
   <!-- MENU MOBILE -->
@@ -756,7 +912,7 @@
       </h3>
     </div>
     <header class="z-slidebar-header">
-
+      
       <div class="z-slidebar-login">
         <a href="javascript:void(0)" class="withripple">
           <i class="fas fa-user"></i> Login</a>
@@ -773,7 +929,7 @@
 
 
         <div class="z-slidebar-t">
-
+         
         </div>
       </div>
     </header>
@@ -838,12 +994,11 @@
   </div>
 
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script src="assets/js/call-to-action.js"></script>
+
+
   <script src="assets/js/plugins.min.js"></script>
   <script src="assets/js/app.min.js"></script>
-
-
+  <script src="assets/js/call-to-action.js"></script>
 
 </body>
-
 </html>

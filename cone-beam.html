@@ -33,41 +33,46 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="assets/css/news.css">
-  <link rel="stylesheet" href="assets/css/azienda.css">
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
-  <link rel="stylesheet" href="assets/css/esami.css">
-  <link rel="stylesheet" href="assets/css/call-to-action.css">
+  <link rel="stylesheet" href="assets/css/responsivo.css">
   <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
 
-
-  
-  <div class="wrapper">
-    <div id="main-div">
-      <div id="main-button" class="wave open btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
-        <i class="fal fa-comment-medical fa-times"></i>
-      </div>
-      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
-      <a href="mailto:someone@microsoft.com?subject=Hello%20again" class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
-      <a href="#" class="whatsapp-color btn-circle btn-circle-raised btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" class="messenger-color btn-circle btn-circle-raised btn-messenger"><i class="fab fa-facebook-messenger"></i></a>
-      <a href="#" class="instagram-color btn-circle btn-circle-raised btn-instagram"><i class="fab fa-instagram"></i></a>
-
-    </div>
-  </div>
-
-  <div id="z-preload" class="z-preload" style="display: none;">
+  <div id="ms-preload" class="ms-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
         <div class="dot2"></div>
       </div>
+    </div>
+  </div>
+  <!-- Call to Action -->
+  <div class="wrapper">
+    <div id="main-div">
+      <div id="main-button" class="wave btn-circle btn-circle-raised btn-circle-cdv animated rubberBand ">
+        <i class="fal fa-comment-medical "></i>
+        <div class="ripple-container"></div>
+      </div>
+      <button class="btn btn-raised btn-cdv"><i class="fal fa-calendar"></i> Prenota Online</button>
+
+      <a href="mailto:someone@microsoft.com?subject=Hello%20again"
+        class="email-color btn-circle btn-circle-raised btn-email"><i class="fal fa-envelope"></i></a>
+
+      <a href="https://wa.me/393457689551" class="whatsapp-color btn-circle btn-circle-raised  btn-whatsapp"><i
+          class="fab fa-whatsapp"></i></a>
+
+      <a href="https://www.messenger.com/t/centrodiagnosticovaldichiana"
+        class="messenger-color btn-circle btn-circle-raised btn-messenger "><i
+          class="fab fa-facebook-messenger"></i></a>
+
+
+
     </div>
   </div>
 
@@ -94,10 +99,9 @@
 
             <div class="modal-header-tabs">
               <!--  títulos login -->
-              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
-                    aria-expanded="true">
+                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple">
                     <i class="fas fa-user"></i> Login</a>
                 </li>
 
@@ -248,7 +252,7 @@
       </div>
     </div>
 
-    <header class="z-header z-header-cdv">
+    <header class="z-header z-header-cdv hide-mobile">
       <div class="container container-full">
         <div class="z-title">
           <a href="index.html">
@@ -260,8 +264,8 @@
           </a>
         </div>
         <div class="header-right">
-          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
-            data-toggle="modal" data-target="#z-account-modal">
+          <a href="" class="btn-circle animated zoomInDown animation-delay-8" data-toggle="modal"
+            data-target="#z-account-modal">
             <i class="fad fa-user"></i>
             <div class="ripple-container"></div>
           </a>
@@ -272,8 +276,7 @@
             </label>
           </form>
 
-          <a href="javascript:void(0)"
-            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
+          <a href="" class="btn-circle sb-toggle-left animated zoomInDown animation-delay-10">
             <i class="fad fa-bars"></i>
             <div class="ripple-container"></div>
           </a>
@@ -281,7 +284,7 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-cdv">
       <div class="container container-full">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
@@ -314,8 +317,7 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
-                              Radiografia</a>
+                            <a href="radiografia.html"><i class="fad fa-caret-right"></i> Radiografia</a>
                           </li>
                           <li>
                             <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
@@ -342,16 +344,14 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
-                              anestesiologia</a>
+                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i> anestesiologia</a>
                           </li>
                           <li>
                             <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
                               broncopneumologia</a>
                           </li>
                           <li>
-                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
-                              cardiologia</a>
+                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i> cardiologia</a>
                           </li>
                           <li>
                             <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
@@ -370,12 +370,10 @@
                               vascolare</a>
                           </li>
                           <li>
-                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
-                              dermatologia</a>
+                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i> dermatologia</a>
                           </li>
                           <li>
-                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
-                              endocrinologia</a>
+                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i> endocrinologia</a>
                           </li>
                           <li>
                             <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
@@ -385,13 +383,11 @@
                               gastroenterologia</a>
                           </li>
                           <li>
-                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
-                              ginecologia</a>
+                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i> ginecologia</a>
                           </li>
 
                           <li>
-                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
-                              legale</a>
+                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina legale</a>
                           </li>
                           <li>
                             <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
@@ -402,8 +398,8 @@
                               lavoro</a>
                           </li>
                           <li>
-                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
-                              dello sport</a>
+                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina dello
+                              sport</a>
                           </li>
                           <li>
                             <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
@@ -457,12 +453,10 @@
                             <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
                           </li>
                           <li>
-                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
-                              psichiatria</a>
+                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i> psichiatria</a>
                           </li>
                           <li>
-                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
-                              psicologia</a>
+                            <a href="psicologia.html"><i class="fad fa-caret-right"></i> psicologia</a>
                           </li>
                         </ul>
                       </div>
@@ -471,8 +465,7 @@
                       <div class="megamenu-block animated fadeInRight animated-2x">
                         <ul class="megamenu-block-list mt-6">
                           <li>
-                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
-                              reumatologia</a>
+                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i> reumatologia</a>
                           </li>
                           <li>
                             <a href="urologia.html">
@@ -487,8 +480,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -500,8 +492,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -533,222 +524,234 @@
     </nav>
 
 
-    <!--  inicio conteúdo -->
-
     <!--  Introdução -->
-
-
     <div class="znc-background"></div>
     <div class="container container-full  ">
-<section class="esami bg-mobile esami-2">
-  <div class="row">
-    <div class="col-md-12 ">
-              <h2 class="right-line hide-mobile">Cone Beam</h2>
-<h2 class="right-line titolo-mobile-2 hide-desktop">Cone Beam</h2>
-                  <div class="row">
-                      <div class="col-md-6 animated fadeInLeftTiny animation-delay-5 mt-2">
-                  
+      <section class="sub-prestazioni bg-mobile sub-prestazioni-2">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h2 class="right-line hide-mobile">Cone Beam</h2>
+            <h2 class="right-line titolo-mobile-2 hide-desktop">Cone Beam</h2>
+            <div class="row">
+              <div class="col-md-6 animated fadeInLeftTiny animation-delay-5 mt-2">
 
-                        <p>Il cone beam è uno strumento che si avvale di raggi X emessi a fascio conico  da uno scanner che ruota attorno alla testa del paziente ottenendo centinaia di immagini distinte che l ‘apparecchio ricostruisce digitalmente.                        </p>
 
-                        <p><strong>Si consiglia per…</strong> visualizzare con estrema precisione le varie strutture in situazioni di patologie: mascellari;  dei seni paranasali  e dei componenti ossei dell’articolazione temporo-mandibolare; la valutazione dei traumi facciali, la pianificazione e la valutazione degli impianti odontoiatrici e dei trattamenti ortodontici.</p>
+                <p class="capitular">Il cone beam è uno strumento che si avvale di raggi X emessi a fascio conico da uno scanner che ruota
+                  attorno alla testa del paziente ottenendo centinaia di immagini distinte che l ‘apparecchio
+                  ricostruisce digitalmente. </p>
 
-                          <p><strong>Si sconsiglia… </strong>a donne in gravidanza o sospetta tale</p>
-                          
-                          <p><strong>Preparazione…</strong> rimozione di parti metalliche se possibile</p>
+                <p><strong>Si consiglia per…</strong> visualizzare con estrema precisione le varie strutture in
+                  situazioni di patologie: mascellari; dei seni paranasali e dei componenti ossei dell’articolazione
+                  temporo-mandibolare; la valutazione dei traumi facciali, la pianificazione e la valutazione degli
+                  impianti odontoiatrici e dei trattamenti ortodontici.</p>
 
-                  
-                    </div>
+                <p><strong>Si sconsiglia… </strong>a donne in gravidanza o sospetta tale</p>
 
-                    <div class="col-md-6 animated fadeInRightTiny animation-delay-5">
-                      <div class="withripple zoom-img">
-                        <a href="javascript:void()">
-                          <img src="assets/img/prest/intern/esami/esami-page/page/cone-beam.png" alt="CONE BEAM" class="img-responsive">
-                        </a>
-                      <div class="ripple-container"></div></div>
-                    </div>
-                    
-                    
+                <p><strong>Preparazione…</strong> rimozione di parti metalliche se possibile</p>
 
-                  
-                  </div>
 
-                  <div class="row">
-                      <hr>
+              </div>
 
-                      <div class="col-md-6 col-sm-push-6 animated fadeInLeftTiny animation-delay-7">
-                        <h5>Consigliata per:
-                        </h5>
-    <ul class="list-group">
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Patologie mascellari</li>
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Seni paranasali</li>
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Componenti ossei dell’articolazione temporo-mandibolare</li>
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Valutazione </span>dei traumi facciali</li>
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Valutazione degli impianti odontoiatrici</li>
-                            <li class="list-group-item"><i class="fad fa-minus"></i>Trattamenti ortodontici.</li>
-                            </ul>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-6 col-sm-pull-6 animated  fadeInRightTiny animation-delay-7 pt-1">
-                        
-                          <div data-type="youtube" data-video-id="t6oT0Wiqyns"></div>
-                       
-                      </div>
-
-                     
-                    </div>
-                
-                    <div class="row hide-mobile pb-6">
-                      <hr>
-                    </div>
-                    </div>
-                  </section>
+              <div class="col-md-6 animated fadeInRightTiny animation-delay-5">
+                <div class="withripple zoom-img">
+                  <a href="javascript:void()">
+                    <img src="assets/img/prest/intern/esami/esami-page/page/cone-beam.png" alt="CONE BEAM"
+                      class="img-responsive">
+                  </a>
+                  <div class="ripple-container"></div>
                 </div>
               </div>
-              <br>
-              
-  <!-- container -->
-  <aside class="z-footbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Mappa del sito
-            </h3>
-            <ul class="list-unstyled z-icon-list three_cols">
-              <li>
-                <a href="index.html">
-                  Home</a>
-              </li>
-              <li>
-                <a href="prestazioni.html">
-                  Prestazioni</a>
-              </li>
-              <li>
-                <a href="professionist.html"> Profissionisti</a>
-              </li>
-              <li>
-                <a href="contatti.html">
-                  Contatti</a>
-              </li>
-              <li>
-                <a href="azienda.html">
-                  Chi Siamo</a>
-              </li>
-              <li>
-                <a href="faq.html">
-                  Come fare per</a>
-              </li>
-              <li>
-                <a href="codice.html">
-                  Codice Etico</a>
-              </li>
-              <li>
-                <a href="professionist.html">
-                  Specialistiche</a>
-              </li>
-              <li>
-                <a href="esami.html">
-                  Esami</a>
-              </li>
-              <li>
-                <a href="ambulatorio.html">
-                  Amb. Infermieristico</a>
-              </li>
-              <li>
-                <a href="punto.html">
-                  Punto Prelievi</a>
-              </li>
 
-            </ul>
-          </div>
 
-        </div>
-        <div class="col-md-4 col-sm-7 footer-col " style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
-            <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
-              ci piace lo spam.</p>
-            <form>
-              <div class="form-group label-floating mt-2 mb-1 is-empty">
-                <div class="input-group z-input-subscribe">
-                  <label class="control-label" for="z-subscribe">
-                    <i class="fad fa-envelope"></i>Inserisci la tua email
-                  </label>
-                  <input type="email" id="z-subscribe" class="form-control">
-                </div>
-                <span class="zncn-input"></span>
+
+
+            </div>
+
+            <div class="row">
+              <hr>
+
+              <div class="col-md-6 col-sm-push-6 animated fadeInLeftTiny animation-delay-7">
+                <h5>Consigliata per:
+                </h5>
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Patologie mascellari</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Seni paranasali</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Componenti ossei dell’articolazione
+                    temporo-mandibolare</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Valutazione </span>dei traumi facciali</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Valutazione degli impianti odontoiatrici</li>
+                  <li class="list-group-item"><i class="fad fa-minus"></i>Trattamenti ortodontici.</li>
+                </ul>
+                </ul>
               </div>
-              <button class="btn-subs" type="button">Sottoscrivi</button>
-            </form>
+
+              <div class="col-md-6 col-sm-pull-6 animated  fadeInRightTiny animation-delay-7 pt-1">
+
+                <div data-type="youtube" data-video-id="t6oT0Wiqyns"></div>
+
+              </div>
+
+
+            </div>
+
+            <div class="row hide-mobile pb-6">
+              <hr>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Contattaci
-            </h3>
-            <address class="no-mb">
-              <p>
-                <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
-              <p>
-                <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
-              </p>
-              <p>
-                <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
-              </p>
-              <p>
-                <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
-              </p>
-              <p>
-                <i class="fas fa-fax color-cdv"></i> +39 0575 649719
-              </p>
-
-            </address>
-          </div>
-
-        </div>
-      </div>
-
+      </section>
     </div>
 
-  </aside>
+    <br>
 
-  <div class="footer-social">
-    <div class="container">
-      <div class="row">
+    <!-- container -->
+    <aside class="z-footbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col" style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Mappa del sito
+              </h3>
+              <ul class="list-unstyled z-icon-list three_cols">
+                <li>
+                  <a href="index.html">
+                    Home</a>
+                </li>
+                <li>
+                  <a href="prestazioni.html">
+                    Prestazioni</a>
+                </li>
+                <li>
+                  <a href="professionist.html"> Profissionisti</a>
+                </li>
+                <li>
+                  <a href="contatti.html">
+                    Contatti</a>
+                </li>
+                <li>
+                  <a href="azienda.html">
+                    Chi Siamo</a>
+                </li>
+                <li>
+                  <a href="faq.html">
+                    Come fare per</a>
+                </li>
+                <li>
+                  <a href="codice.html">
+                    Codice Etico</a>
+                </li>
+                <li>
+                  <a href="professionist.html">
+                    Specialistiche</a>
+                </li>
+                <li>
+                  <a href="esami.html">
+                    Esami</a>
+                </li>
+                <li>
+                  <a href="ambulatorio.html">
+                    Amb. Infermieristico</a>
+                </li>
+                <li>
+                  <a href="punto.html">
+                    Punto Prelievi</a>
+                </li>
 
-        <div class="col-md-12 footer-col text-center ">
-          <div class="z-footbar-block">
-            <h3>Social</h3>
-            <div>
-              <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
+              </ul>
+            </div>
 
-              <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
+          </div>
+          <div class="col-md-4 col-sm-7 footer-col " style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
+              <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
+                ci piace lo spam.</p>
+              <form>
+                <div class="form-group label-floating mt-2 mb-1 is-empty">
+                  <div class="input-group z-input-subscribe">
+                    <label class="control-label" for="z-subscribe">
+                      <i class="fad fa-envelope"></i>Inserisci la tua email
+                    </label>
+                    <input type="email" id="z-subscribe" class="form-control">
+                  </div>
+                  <span class="zncn-input"></span>
+                </div>
+                <button class="btn-subs" type="button">Sottoscrivi</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
+            <div class="z-footbar-block">
+              <h3 class="z-footbar-title">Contattaci
+              </h3>
+              <address class="no-mb">
+                <p>
+                  <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
+                <p>
+                  <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+                </p>
+                <p>
+                  <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
+                </p>
+                <p>
+                  <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
+                </p>
+                <p>
+                  <i class="fas fa-fax color-cdv"></i> +39 0575 649719
+                </p>
 
-              <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
-                target="_blank" class="btn-circle  btn-linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              </a>
+              </address>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <div class="footer-social">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 footer-col text-center ">
+            <div class="z-footbar-block">
+              <h3>Social</h3>
+              <div>
+                <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
+                  class="btn-circle  btn-facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
+                  class="btn-circle  btn-instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
+                  target="_blank" class="btn-circle  btn-linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <div class="btn-back-top back-show">
+      <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-raised btn-circle-cdv   ">
+        <i class="fas fa-chevron-up"></i>
+        <div class="ripple-container"></div>
+      </a>
     </div>
-  </footer>
 
   </div>
   <!-- sb-site-container -->
@@ -843,11 +846,11 @@
   </div>
 
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script src="assets/js/call-to-action.js"></script>
+
+
   <script src="assets/js/plugins.min.js"></script>
   <script src="assets/js/app.min.js"></script>
-
-
+  <script src="assets/js/call-to-action.js"></script>
 
 </body>
 

@@ -26,20 +26,27 @@
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+ 
   <link rel="stylesheet" href="assets/css/news.css">
-  <link rel="stylesheet" href="assets/css/azienda.css">
-  <link rel="stylesheet" href="assets/css/sidebar.css">
+  
+ 
 
+  <!-- owl-carousel -->
+  <link rel="stylesheet" href="assets/owl/css/carousel.css">
+  <link rel="stylesheet" href="assets/owl/css/theme.css">
+  <link rel="stylesheet" href="assets/owl/css/owl.css">
+
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="assets/css/responsivo.css">
   <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body cz-shortcut-listen="true" style="overflow: visible;">
 
-  <div id="z-preload" class="z-preload" style="display: none;">
+  <div id="ms-preload" class="ms-preload" style="display: none;">
     <div id="status" style="display: none;">
       <div class="spinner">
         <div class="dot1"></div>
@@ -47,8 +54,9 @@
       </div>
     </div>
   </div>
+  <!-- Call to Action -->
 
-  <div class="sb-site-container">
+  <div class="sb-site-container " style="background-color: #fefefe;">
 
     <!-- Modal -->
     <div class="modal modal-cdv in" id="z-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -71,10 +79,9 @@
 
             <div class="modal-header-tabs">
               <!--  títulos login -->
-              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-cdv" role="tablist">
+              <ul class="nav nav-tabs nav-tabs-full nav-tabs-3" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple"
-                    aria-expanded="true">
+                  <a href="#z-login-tab" aria-controls="z-login-tab" role="tab" data-toggle="tab" class="withoutripple">
                     <i class="fas fa-user"></i> Login</a>
                 </li>
 
@@ -225,7 +232,7 @@
       </div>
     </div>
 
-    <header class="z-header z-header-cdv">
+    <header class="z-header z-header-cdv hide-mobile">
       <div class="container container-full">
         <div class="z-title">
           <a href="index.html">
@@ -237,20 +244,18 @@
           </a>
         </div>
         <div class="header-right">
-          <a href="javascript:void(0)" class="btn-circle btn-circle-cdv animated zoomInDown animation-delay-8"
-            data-toggle="modal" data-target="#z-account-modal">
+          <a href="" class="btn-circle  animated zoomInDown animation-delay-8" data-toggle="modal" data-target="#z-account-modal">
             <i class="fad fa-user"></i>
             <div class="ripple-container"></div>
           </a>
           <form class="search-form animated zoomInDown animation-delay-9">
-            <input id="search-box" type="text" class="search-input" placeholder="Ricerca..." name="q" />
+            <input id="search-box" type="text" class="search-input" placeholder="Ricerca..." name="q">
             <label for="search-box">
               <i class="fad fa-search"></i>
             </label>
           </form>
 
-          <a href="javascript:void(0)"
-            class="btn-circle btn-circle-cdv sb-toggle-left animated zoomInDown animation-delay-10">
+          <a href="" class="btn-circle  sb-toggle-left animated zoomInDown animation-delay-10">
             <i class="fad fa-bars"></i>
             <div class="ripple-container"></div>
           </a>
@@ -258,7 +263,7 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
+    <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-cdv">
       <div class="container container-full">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
@@ -291,8 +296,7 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="radiografia.html"><i class="fad fa-caret-right"></i>
-                              Radiografia</a>
+                            <a href="radiografia.html"><i class="fad fa-caret-right"></i> Radiografia</a>
                           </li>
                           <li>
                             <a href="risonanza.html"><i class="fad fa-caret-right"></i> Risonanza
@@ -300,7 +304,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="cone.htlm"><i class="fad fa-caret-right"></i> Cone Beam</a>
+                            <a href="cone-beam.html"><i class="fad fa-caret-right"></i> Cone Beam</a>
                           </li>
                           <li>
                             <a href="moc.html"><i class="fad fa-caret-right"></i> Moc</a>
@@ -319,16 +323,14 @@
                         </h3>
                         <ul class="megamenu-block-list">
                           <li>
-                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i>
-                              anestesiologia</a>
+                            <a href="anestesiologia.html"><i class="fad fa-caret-right"></i> anestesiologia</a>
                           </li>
                           <li>
                             <a href="broncopneumologia.html"><i class="fad fa-caret-right"></i>
                               broncopneumologia</a>
                           </li>
                           <li>
-                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i>
-                              cardiologia</a>
+                            <a href="cardiologia.htlm"><i class="fad fa-caret-right"></i> cardiologia</a>
                           </li>
                           <li>
                             <a href="chirurgiagenerale.html"><i class="fad fa-caret-right"></i> chirurgia
@@ -347,12 +349,10 @@
                               vascolare</a>
                           </li>
                           <li>
-                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i>
-                              dermatologia</a>
+                            <a href="dermatologia.html"><i class="fad fa-caret-right"></i> dermatologia</a>
                           </li>
                           <li>
-                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i>
-                              endocrinologia</a>
+                            <a href="endocrinologia.html"><i class="fad fa-caret-right"></i> endocrinologia</a>
                           </li>
                           <li>
                             <a href="fisiatria.html"><i class="fad fa-caret-right"></i> fisiatria</a>
@@ -362,13 +362,11 @@
                               gastroenterologia</a>
                           </li>
                           <li>
-                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i>
-                              ginecologia</a>
+                            <a href="ginecologia.html"><i class="fad fa-caret-right"></i> ginecologia</a>
                           </li>
 
                           <li>
-                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina
-                              legale</a>
+                            <a href="medicina-legale.html"><i class="fad fa-caret-right"></i> medicina legale</a>
                           </li>
                           <li>
                             <a href="medicina-chirurgia-estetica.html"><i class="fad fa-caret-right"></i> medicina e
@@ -379,8 +377,8 @@
                               lavoro</a>
                           </li>
                           <li>
-                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina
-                              dello sport</a>
+                            <a href="medicina-dello-sport.html"><i class="fad fa-caret-right"></i> medicina dello
+                              sport</a>
                           </li>
                           <li>
                             <a class="withripple" href="nefrologia.html"><i class="fad fa-caret-right"></i>
@@ -434,12 +432,10 @@
                             <a href="pediatria.htlm"><i class="fad fa-caret-right"></i> pediatria</a>
                           </li>
                           <li>
-                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i>
-                              psichiatria</a>
+                            <a href="psichiatria.html"><i class="fad fa-caret-right"></i> psichiatria</a>
                           </li>
                           <li>
-                            <a href="psicologia.html"><i class="fad fa-caret-right"></i>
-                              psicologia</a>
+                            <a href="psicologia.html"><i class="fad fa-caret-right"></i> psicologia</a>
                           </li>
                         </ul>
                       </div>
@@ -448,8 +444,7 @@
                       <div class="megamenu-block animated fadeInRight animated-2x">
                         <ul class="megamenu-block-list mt-6">
                           <li>
-                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i>
-                              reumatologia</a>
+                            <a href="reumatologia.html"><i class="fad fa-caret-right"></i> reumatologia</a>
                           </li>
                           <li>
                             <a href="urologia.html">
@@ -464,8 +459,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -477,8 +471,7 @@
                         <ul class="megamenu-block-list">
                           <li>
                             <a href="urologia.html">
-                              <i class="fad fa-caret-right"></i> Vai alla
-                              pagina</a>
+                              <i class="fad fa-caret-right"></i> Vai alla pagina</a>
                           </li>
                         </ul>
                       </div>
@@ -509,18 +502,17 @@
       <!-- container -->
     </nav>
 
-
- <!--  Introdução -->
- <div class="intro-intern-override intro-intern-img-citta hero-bg-cdv pt-4">
-  <div class="container ">
-    <div class="text-center">
-      <img src="assets/img/navbar-brand.png" alt=""
-        class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
-      <br>
-      <h1 class="no-m mt-2 animated zoomInDown animation-delay-5 index-1">Come fare per</span>
+  <!--  Introdução -->
+  <div class="intro-intern-override img-clinica hero-bg-cdv ">
+    <div class="container ">
+      <div class="text-center">
+        <img src="assets/img/navbar-brand.png" alt=""
+          class="cdv-logo cdv-logo-lg cdv-logo-intro center-block mb-2 mt-2 animated zoomInDown animation-delay-5">
+        <br>
+        <h1 class="no-m mt-2 animated zoomInDown animation-delay-5 index-1">Come fare per</span>
       </h1>
 
-      <p class="filo filo-lg center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Alla continua ricerca dell'eccellenza
+      <p class="animated fadeInUp animation-delay-7 color-white">Alla continua ricerca dell'eccellenza
         del servizio fornito.
       </p>
     </div>
@@ -529,15 +521,13 @@
 
 
 
-<div class="container faq card index-1">
-<div class="row">
-  <div class="col-lg-8 col-md-7">
-   
-      <div class="hero-bg-cdv hero-img-cdv">
-        <h1 class="pb-4 pt-4 no-mb index-1">Come fare per</h1>
-      </div>
-      <div class="card-block">
-          <div class="panel-group ms-collapse" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="container index-1">
+  <div class="page-containeir  animated slideInUp animation-delay-8 mb-6 col-sm-7">
+        <h2 class="mt-2">Come fare per</h2>
+        <div class=" mt-2">
+          <h3 class="color-cdv">
+            Vedi le domande frequenti</h3>
+          <div class="azienda panel-group ms-collapse" id="accordion" role="tablist" aria-multiselectable="true">
 
             <div class="panel panel-cdv">
               <div class="panel-heading" role="tab" id="headingOne">
@@ -550,7 +540,7 @@
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
                 aria-labelledby="headingOne">
                 <div class="panel-body">
-                  <h4 class="right-line">Non sei coperto, non ne sei sicuro? Risolvi il dilemma</h4>
+                  <h4>Non sei coperto, non ne sei sicuro? Risolvi il dilemma</h4>
 <p>In Italia la vaccinazione antitetanica è obbligatoria per tutti i nuovi nati, secondo una schedula vaccinale determinata (1a dose al terzo mese di vita, 2a dose al quinto mese e 3a al dodicesimo); una dose di richiamo viene effettuata a distanza di 4-5 anni dall’ultima, prima dell’inizio del ciclo scolastico primario; si effettuano in seguito richiami ogni 10 anni. Dopo l’effettuazione della dose di richiamo a circa 15 anni di età, è un buon trucco mnemonico ricordarsi di effettuare un richiamo ogni volta che la propria età finisce per 5 (25, 35, 45 anni, etc.).</p>
 
 <p>Se non ricordi lo stato della tua vaccinazione puoi ricorrere al tuo personale LIBRETTO DELLE VACCINAZIONI, se non loritrovi recati dal tuo Medico di Medicina Generale che dovrebbe conservare un archivio dei propri pazienti o può comunque accedere alla banca dati on line del servizio Profilassi della ASL di apparteneza, in ultima istanza lo stesso Medico può somministrarti e registrare il richiamo secondo le modalità che lui stesso ti impartirà.</p>
@@ -603,10 +593,10 @@
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                  <h4 class="right-line">La documentazione indispensabile
+                  <h4>La documentazione indispensabile
                   </h4>
-                  <h5>Documentazione obbligatoria da presentare all'appuntamento per il rinnovo dell'idoneità sportiva 
-                  </h5>
+                  <p class="numerador">Documentazione obbligatoria da presentare all'appuntamento per il rinnovo dell'idoneità sportiva 
+                  </p>
                   <ul class="list-group">
                     <li class="list-group-item"><i class="fad fa-caret-right"></i>
                       Richiesta di visita agonistica da parte del Presidente della società sportiva di appartenenza;</li>
@@ -639,7 +629,7 @@
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
                 aria-labelledby="headingThree">
                 <div class="panel-body">
-                  <h4 class="right-line">
+                  <h4>
 Come prepararsi a quella di idoneita non agonistica tipo "A"
                   </h4>
                   <ul class="list-group">
@@ -647,7 +637,7 @@ Come prepararsi a quella di idoneita non agonistica tipo "A"
                     <li class="list-group-item"><i class="fad fa-caret-right"></i> ogni documentazione relativa ad esami e visite mediche effettuate in precedenza;</li>
                     <li class="list-group-item"><i class="fad fa-caret-right"></i> un documento di riconoscimento dell’accompagnatore (per i minorenni);</li>
                   </ul>
-                  <h4 class="right-line">
+                  <h4>
                     La visita di idoneità non agonistica o di tipo "A" compreende:
                   </h4>
                   <ul class="list-group">
@@ -658,7 +648,7 @@ Come prepararsi a quella di idoneita non agonistica tipo "A"
                     
                   </ul>
                   <p>Il medico può in ogni caso prescrivere anche altri accertamenti ed esami, in relazioni alle specifiche necessità del paziente, così come può avvalersi, secondo il suo giudizio clinico, della consulenza di un medico sportivo o di un altro collega specialista nella specifica branca.</p>
-                  <h4 class="right-line">
+                  <h4>
 Quanto vale il certificato di idoneità per attività non agonistica?                    </h4>
 <p>Il certificato ha validità di un anno dalla data del rilascio.
 
@@ -678,7 +668,7 @@ Quanto vale il certificato di idoneità per attività non agonistica?           
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
                 aria-labelledby="headingFour">
                 <div class="panel-body">
-                  <h4 class="right-line">
+                  <h4>
                     Come prepararsi a quella di idoneita non agonistica tipo "B"
                                         </h4>
      
@@ -713,7 +703,7 @@ Quanto vale il certificato di idoneità per attività non agonistica?           
 
                                         <p>L’atleta minorenne al primo accesso deve essere accompagnato da un genitore; alle visite successive, se il genitore non potesse essere presente, l’atleta potrà essere accompagnato da un familiare maggiorenne, munito di delega .</p>
 
-                                        <h5>Si consiglia di:</h5>
+                                        <p class="numerador">Si consiglia di:</p>
                                         <ul class="list-group">
                                           <li class="list-group-item"><i class="fad fa-caret-right"></i> indossare un abbigliamento intimo sportivo ed un paio di calze antiscivolo;</li>
                                           <li class="list-group-item"><i class="fad fa-caret-right"></i> non fare sforzi intensi (compresi allenamenti e partite) a partire dal giorno precedente la visita.</li>
@@ -733,7 +723,7 @@ Quanto vale il certificato di idoneità per attività non agonistica?           
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
                 aria-labelledby="headingFive">
                 <div class="panel-body">
-                  <h4 class="right-line">Prenotare un esame</h4>
+                  <h4>Prenotare un esame</h4>
 
                   <p>Il metodo veloce per prenotare un esame diagnostico è mediante utilizzo del nostro servizio di prenotazione online.</p>
 
@@ -755,38 +745,51 @@ Quanto vale il certificato di idoneità per attività non agonistica?           
 
           </div>
         </div>
-     
-      </div>
+     </div>
+      
 
  
    <!--  Contattaci -->
-  <div class="col-lg-4 col-md-5">
-  
-      <div class="hero-bg-cdv hero-img-cdv">
-        <h1 class=" pb-4 pt-4 no-mb index-1">Contattaci</h1>
-      </div>
-      <div class="card-block">
+   <div class="page-containeir  animated slideInUp animation-delay-8 mb-6 col-sm-5">
+    <h2 class="mt-2">Contattaci</h2>
+
+      <div class=" mt-2">
         <h3 class="color-cdv">
           Hai altre domande?</h3>
-        <form class="">
-          <div class="form-group label-floating is-empty">
-            <label for="inputName" class="control-label">Nome</label>
-            <input type="text" class="form-control" id="inputName"> <span class="material-input"></span></div>
-          <div class="form-group label-floating is-empty">
-            <label for="inputEmail" class="control-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail"> <span class="material-input"></span></div>
-          <div class="form-group label-floating is-empty">
-            <label for="inputSubject" class="control-label">Soggetto</label>
-            <input type="text" class="form-control" id="inputSubject"> <span class="material-input"></span></div>
-          <div class="form-group label-floating is-empty">
-            <label for="textArea" class="control-label">Messagio</label>
-            <textarea class="form-control" rows="7" id="textArea"></textarea>
-          <span class="material-input"></span></div>
-          <div class="form-group text-right">
-            <button type="submit" class="btn btn-raised btn-cdv">Inivia</button>
-            <button type="button" class="btn btn-raised btn-cdv-hot">Anulla</button>
-          </div>
-        </form>
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="form-group">
+              
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="inputName" placeholder="Nome e Cognome" required> </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email " required> </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Oggetto" required> </div>
+              </div>
+          
+              <label class="nao-aparece">	Se non sei un robot, lascia il campo vuoto.</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">	Se non sei un robot, lascia il campo vuoto.</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+          
+              <div class="form-group">
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="5" id="textArea" placeholder="Inserisci il tuo messaggio..." required></textarea>
+                </div>
+              </div>
+
+                
+                  <button type="submit" class="btn btn-submit" style="display: inline-block;">Inivia</button>
+                  <button type="button" class="btn btn-anulla" style="display: inline-block;">Anulla</button>
+                
+            
+            </fieldset>
+          </form>
       </div>
 
   </div>
@@ -794,245 +797,270 @@ Quanto vale il certificato di idoneità per attività non agonistica?           
 </div>
 
   <!-- container -->
-  <aside class="z-footbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Mappa del sito
-            </h3>
-            <ul class="list-unstyled z-icon-list three_cols">
-              <li>
-                <a href="index.html">
-                  Home</a>
-              </li>
-              <li>
-                <a href="prestazioni.html">
-                  Prestazioni</a>
-              </li>
-              <li>
-                <a href="professionist.html"> Profissionisti</a>
-              </li>
-              <li>
-                <a href="contatti.html">
-                  Contatti</a>
-              </li>
-              <li>
-                <a href="azienda.html">
-                  Chi Siamo</a>
-              </li>
-              <li>
-                <a href="faq.html">
-                  Come fare per</a>
-              </li>
-              <li>
-                <a href="codice.html">
-                  Codice Etico</a>
-              </li>
-              <li>
-                <a href="professionist.html">
-                  Specialistiche</a>
-              </li>
-              <li>
-                <a href="esami.html">
-                  Esami</a>
-              </li>
-              <li>
-                <a href="ambulatorio.html">
-                  Amb. Infermieristico</a>
-              </li>
-              <li>
-                <a href="punto.html">
-                  Punto Prelievi</a>
-              </li>
 
-            </ul>
-          </div>
+ <aside class="z-footbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-col" style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Mappa del sito
+          </h3>
+          <ul class="list-unstyled z-icon-list three_cols">
+            <li>
+              <a href="index.html">
+                Home</a>
+            </li>
+            <li>
+              <a href="prestazioni.html">
+                Prestazioni</a>
+            </li>
+            <li>
+              <a href="professionist.html"> Profissionisti</a>
+            </li>
+            <li>
+              <a href="contatti.html">
+                Contatti</a>
+            </li>
+            <li>
+              <a href="azienda.html">
+                Chi Siamo</a>
+            </li>
+            <li>
+              <a href="faq.html">
+                Come fare per</a>
+            </li>
+            <li>
+              <a href="codice.html">
+                Codice Etico</a>
+            </li>
+            <li>
+              <a href="professionist.html">
+                Specialistiche</a>
+            </li>
+            <li>
+              <a href="esami.html">
+                Esami</a>
+            </li>
+            <li>
+              <a href="ambulatorio.html">
+                Amb. Infermieristico</a>
+            </li>
+            <li>
+              <a href="punto.html">
+                Punto Prelievi</a>
+            </li>
 
+          </ul>
         </div>
-        <div class="col-md-4 col-sm-7 footer-col " style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
-            <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
-              ci piace lo spam.</p>
-            <form>
-              <div class="form-group label-floating mt-2 mb-1 is-empty">
-                <div class="input-group z-input-subscribe">
-                  <label class="control-label" for="z-subscribe">
-                    <i class="fad fa-envelope"></i>Inserisci la tua email
-                  </label>
-                  <input type="email" id="z-subscribe" class="form-control">
-                </div>
-                <span class="zncn-input"></span>
+
+      </div>
+      <div class="col-md-4 col-sm-7 footer-col " style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Inscriviti alla Newsletter</h3>
+          <p class="cdv-color">Iscriviti per ricevere i nostri aggiornamenti via <br>e-mail, non preoccuparti, non
+            ci piace lo spam.</p>
+          <form>
+            <div class="form-group label-floating mt-2 mb-1 is-empty">
+              <div class="input-group z-input-subscribe">
+                <label class="control-label" for="z-subscribe">
+                  <i class="fad fa-envelope"></i>Inserisci la tua email
+                </label>
+                <input type="email" id="z-subscribe" class="form-control">
               </div>
-              <button class="btn-subs" type="button">Sottoscrivi</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
-          <div class="z-footbar-block">
-            <h3 class="z-footbar-title">Contattaci
-            </h3>
-            <address class="no-mb">
-              <p>
-                <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
-              <p>
-                <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
-              </p>
-              <p>
-                <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
-              </p>
-              <p>
-                <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
-              </p>
-              <p>
-                <i class="fas fa-fax color-cdv"></i> +39 0575 649719
-              </p>
-
-            </address>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </aside>
-
-  <div class="footer-social">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 footer-col text-center ">
-          <div class="z-footbar-block">
-            <h3>Social</h3>
-            <div>
-              <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-
-              <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
-                class="btn-circle  btn-instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-
-              <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
-                target="_blank" class="btn-circle  btn-linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              </a>
+              <span class="zncn-input"></span>
             </div>
+            <button class="btn-subs" type="button">Sottoscrivi</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-5 footer-col footer-text-right" style="">
+        <div class="z-footbar-block">
+          <h3 class="z-footbar-title">Contattaci
+          </h3>
+          <address class="no-mb">
+            <p>
+              <i class="fas fa-map-pin color-cdv"></i> Via delle Farniole, 24 52045
+            <p>
+              <i class="fas fa-map color-cdv"></i> Foiano della Chiana (Ar) - Italy
+            </p>
+            <p>
+              <i class="fas fa-envelope color-cdv"></i> info@centrodiagnosticovaldichiana.it
+            </p>
+            <p>
+              <i class="fas fa-phone-office color-cdv"></i> +39 0575 641106
+            </p>
+            <p>
+              <i class="fas fa-fax color-cdv"></i> +39 0575 649719
+            </p>
+
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</aside>
+
+<div class="footer-social">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 footer-col text-center ">
+        <div class="z-footbar-block">
+          <h3>Social</h3>
+          <div>
+            <a href="https://www.facebook.com/centrodiagnosticovaldichiana" target="_blank"
+              class="btn-circle  btn-facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/centrodiagnosticovaldichiana" target="_blank"
+              class="btn-circle  btn-instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/cdv-centro-diagnostico-valdichiana-69a71a18b/?originalSubdomain=it"
+              target="_blank" class="btn-circle  btn-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
-    </div>
-  </footer>
-
+<footer class="footer">
+  <div class="container">
+    <p>© Copyright 2021 - Centro Diagnostico Valdichiana - All Rights Reserved</p>
   </div>
-  <!-- sb-site-container -->
+</footer>
 
-  <!-- MENU MOBILE -->
-  <div class="z-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
+<div class="btn-back-top back-show">
+  <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-raised btn-circle-cdv   ">
+    <i class="fas fa-chevron-up"></i>
+    <div class="ripple-container"></div>
+  </a>
+</div>
 
-    <div class="hero-bg-cdv-profile hero-img-profile pt-6  pb-6">
-      <h3 class="index-1 text-center color-white">Centro Diagnostico <strong>Valdichiana</strong>
-      </h3>
+</div>
+<!-- sb-site-container -->
+
+<!-- MENU MOBILE -->
+<div class="z-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
+
+  <div class="hero-bg-cdv-profile hero-img-profile pt-6  pb-6">
+    <h3 class="index-1 text-center color-white">Centro Diagnostico <strong>Valdichiana</strong>
+    </h3>
+  </div>
+  <header class="z-slidebar-header">
+
+    <div class="z-slidebar-login">
+      <a href="javascript:void(0)" class="withripple">
+        <i class="fas fa-user"></i> Login</a>
+      <a href="javascript:void(0)" class="withripple">
+        <i class="fas fa-user-plus"></i> Registrati</a>
     </div>
-    <header class="z-slidebar-header">
-      
-      <div class="z-slidebar-login">
-        <a href="javascript:void(0)" class="withripple">
-          <i class="fas fa-user"></i> Login</a>
-        <a href="javascript:void(0)" class="withripple">
-          <i class="fas fa-user-plus"></i> Registrati</a>
-      </div>
-      <div class="z-slidebar-title">
-        <form class="search-form">
-          <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
-          <label for="search-box-slidebar">
-            <i class="fad fa-search"></i>
-          </label>
-        </form>
+    <div class="z-slidebar-title">
+      <form class="search-form">
+        <input id="search-box-slidebar" type="text" class="search-input" placeholder="Ricerca..." name="q" />
+        <label for="search-box-slidebar">
+          <i class="fad fa-search"></i>
+        </label>
+      </form>
 
 
-        <div class="z-slidebar-t">
-         
-        </div>
-      </div>
-    </header>
-    <ul class="z-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-      <li class="panel" role="tab" id="sch1">
-        <a class="link" href="#index">
-          Home </a>
-
-      </li>
-      <li class="panel" role="tab" id="sch2">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
-          aria-expanded="false" aria-controls="sc2">
-          Prestazioni </a>
-        <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
-          <li>
-            <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
-          </li>
-
-          <li>
-            <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
-          </li>
-
-          <li>
-            <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
-          </li>
-          <li>
-            <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
-          </li>
-
-        </ul>
-      </li>
-      <li class="panel" role="tab" id="sch4">
-        <a class="link" href="professionist.html">
-          Professionisti </a>
-
-      </li>
-      <li class="panel" role="tab" id="sch5">
-        <a class="link" href="contatti.html">
-          Contatti </a>
-
-      </li>
-    </ul>
-    <hr>
-    <div class="cdv-social z-slidebar-block">
-      <h4 class="z-slidebar-block-title">Social</h4>
-      <div class="cdv-social">
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
-          <i class="fab fa-facebook-f"></i>
-          <div class="ripple-container"></div>
-        </a>
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
-          <i class="fab fa-linkedin"></i>
-          <div class="ripple-container"></div>
-        </a>
-        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
-          <i class="fab fa-instagram"></i>
-          <div class="ripple-container"></div>
-        </a>
+      <div class="z-slidebar-t">
 
       </div>
+    </div>
+  </header>
+  <ul class="z-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+    <li class="panel" role="tab" id="sch1">
+      <a class="link" href="#index">
+        Home </a>
+
+    </li>
+    <li class="panel" role="tab" id="sch2">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"
+        aria-expanded="false" aria-controls="sc2">
+        Prestazioni </a>
+      <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
+        <li>
+          <a href="esami.html"><i class="fas fa-diagnoses"></i> Esami Diagnostici</a>
+        </li>
+
+        <li>
+          <a href="specialistiche.html"><i class="fas fa-user-md"></i> Specialistiche</a>
+        </li>
+
+        <li>
+          <a href="ambulatorio.html"><i class="fas fa-user-nurse"></i> Ambulatorio Infermieristico</a>
+        </li>
+        <li>
+          <a href="punto.html"><i class="fad fa-hospital-user"></i> Punto Prelievi</a>
+        </li>
+
+      </ul>
+    </li>
+    <li class="panel" role="tab" id="sch4">
+      <a class="link" href="professionist.html">
+        Professionisti </a>
+
+    </li>
+    <li class="panel" role="tab" id="sch5">
+      <a class="link" href="contatti.html">
+        Contatti </a>
+
+    </li>
+  </ul>
+  <hr>
+  <div class="cdv-social z-slidebar-block">
+    <h4 class="z-slidebar-block-title">Social</h4>
+    <div class="cdv-social">
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+        <i class="fab fa-facebook-f"></i>
+        <div class="ripple-container"></div>
+      </a>
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-linkedin">
+        <i class="fab fa-linkedin"></i>
+        <div class="ripple-container"></div>
+      </a>
+      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+        <i class="fab fa-instagram"></i>
+        <div class="ripple-container"></div>
+      </a>
+
     </div>
   </div>
+</div>
 
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-
-  <script src="assets/js/plugins.min.js"></script>
-  <script src="assets/js/app.min.js"></script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 
 
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/call-to-action.js"></script>
+
+<!-- owl-carousel -->
+<script src="assets/owl/js/jquery-1.9.1.min.js"></script>
+<script src="assets/owl/owl-carousel/owl.carousel.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#owl-cdv").owlCarousel({
+      autoPlay: 3000,
+      items: 2,
+      navigation: false,
+      navigationText: ['', ''],
+      itemsDesktop: [1140, 2],
+      itemsDesktopSmall: [979, 2]
+    });
+  });
+</script>
 
 </body>
 
